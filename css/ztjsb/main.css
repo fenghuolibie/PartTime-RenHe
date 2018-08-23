@@ -1,0 +1,138 @@
+body {
+    background: #fff;
+    font-family: "SimHei";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+html {
+    height: 100%;
+}
+a{
+    color: #fff;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "SimHei";
+    font-weight: 900;
+    line-height: 1.1;
+    color: inherit;
+}
+.clear{clear: both;}
+
+.animate-box {
+    opacity: 0;
+}
+
+.mini-top{
+    width: 100%;
+    background: url(../../img/banner/topbg.png) repeat;;
+    height: 91px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.mini-header{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-logo{
+
+    height: 45px;
+    margin-top:20px;
+    float:left;
+}
+.mini-nav{
+    width: 290px;
+    height: 45px;
+    margin-top:10px;
+    float: right;
+}
+.mini-nav ul{
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-nav ul li {
+    float: left;
+    font-size: 16px;
+    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-left: 1px solid #999999;
+}
+.mini-nav ul li a{
+    color: #fff;
+}
+.mini-nav ul li a:hover{
+    font-weight: bold;
+}
+.opentalk{cursor:pointer;}
+h2.title{font-size: 58px;text-align: center;margin: 20px 0 10px 0;}
+p.fbt{text-align: center;font-size:24px;}
+#top{background: url(../../img/ztjsb/topbg.jpg) center no-repeat;height: 500px;position: relative;margin-top:69px;}
+.ljxx{position: absolute;width: 150px;height: 150px;left: 50%;bottom: 0;background: #f65d31;border-radius: 50%;text-align: center;line-height: 40px;font-size: 40px;color: #fff;font-weight: bold;margin-left:-75px;margin-bottom: -75px;}
+.ljxx p{margin-top:35px;}
+
+
+#part1{padding:9em 0 2em 0;}
+
+.part1{height: 429px;margin-top:40px;text-align: center;color: #fff;}
+.part1 span{margin-top:260px;display:inline-block;font-size: 28px;}
+.part1 h1{font-size:54px;}
+.part1_1{background: url(../../img/ztjsb/part1_img1.jpg) center no-repeat;}
+.part1_2{background: url(../../img/ztjsb/part1_img2.jpg) center no-repeat;}
+.part1_3{background: url(../../img/ztjsb/part1_img3.jpg) center no-repeat;}
+.span{text-align: center;margin-top: 40px;}
+span.butn{background: #f65d31;padding:15px 60px;font-size:32px;color: #fff;border-radius: 30px;display: inline-block;}
+
+
+#part2{background: url(../../img/ztjsb/part2bg.jpg) center no-repeat;height: 1146px;width: 100%;}
+.part2_1{background: #ce261a;color: #fff;font-size: 22px;padding:20px;line-height: 30px;margin-top:20px;}
+#part2 table{font-size:20px;width: 100%;}
+#part2 table tr th{text-align: center;color: #ce261a;border-bottom: 1px solid #c1c1c1;height: 50px;}
+#part2 table tr td{border-bottom: 1px solid #c1c1c1;}
+#part2 table tr .bt{text-align: center;width: 20%;border-left: 1px solid #c1c1c1;border-right: 1px solid #c1c1c1;background: #e6e8e8;}
+#part2 table tr .nr{padding:20px 0 20px 10px;border-right: 1px solid #c1c1c1;background: #fff;}
+#part2 img{margin: 60px 0 20px 0;}
+
+#part3{padding-bottom: 50px;}
+#part3 h2{margin: 50px 0;text-align: center;font-size: 48px;}
+#part3 h2 span{color: #f65d31;}
+
+
+#part4{background: url(../../img/ztjsb/part4bg.jpg) center no-repeat;height: 684px;color:#fff;text-align: center;}
+#part4 h2{font-size:78px;margin:180px 0 10px 0;}
+#part4 p{font-size:32px;line-height: 36px;font-weight:lighter;}
+
+#part5{background: url(../../img/ztjsb/part5.jpg) center no-repeat;height:751px;}
+
+#part6{padding:5em 0 2em 0;text-align: center;}
+#part6 img{margin-top:40px;}
+
+#part7{background: url(../../img/ztjsb/part7bg.jpg) center no-repeat;height: 863px;width: 100%;position: relative;}
+#part7 .part7{background: #fff;margin-top:163px;height: 700px;border-top-left-radius:2em;
+    border-top-right-radius:2em;text-align: center;}
+
+.part7-1{width: 70%;margin: 0 auto;}
+.part7-1 h2{font-size:58px;margin: 50px 0;color: #666666;}
+.part7-1 form{}
+.part7-1 select{width: 100%;height: 60px;margin-bottom: 20px;font-size: 24px;}
+
+.part7-1 label {width: 100%;height: 60px;margin-bottom: 20px;font-size: 24px;}
+.part7-1 input{line-height: 60px;width: 100%;}
+.part7-1 p{font-size:18px;color: #8a8a8a;}
+.part7-1 .tijiao{border: none;border-radius: 20px;background: #f65d31;color: #fff;font-size: 26px;margin-top:20px;}
+
+
+.footer{width:100%;background:#2d404f;height:253px;text-align:center;font-size:16px;color:#fff;}
+.footer1{width:1200px;margin:0 auto;}
+.footer1 li{float:Left;margin:20px 40px;}

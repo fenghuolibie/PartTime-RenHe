@@ -1,0 +1,600 @@
+body,
+html {
+    overflow-x: hidden;
+    background: #FFFFFF;
+    font-family: "SimHei";
+
+    width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+button,
+div {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+div,
+ul,
+li {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+img{border:none;}
+.clear {
+    clear: both;
+}
+
+/*澶撮儴*/
+.mini-top{
+    width: 100%;
+    background: url(http://site.whrhkj.com/public/img/banner/topbg.png) repeat;;
+    height: 91px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.mini-header{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-logo{
+    width: 470px;
+    height: 45px;
+    margin-top:20px;
+    float:left;
+}
+.mini-nav{
+    width: 290px;
+    height: 45px;
+    margin-top:10px;
+    float: right;
+}
+.mini-nav ul{
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-nav ul li {
+    float: left;
+    font-size: 16px;
+    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-left: 1px solid #999999;
+}
+.mini-nav ul li a{
+    color: #fff;
+}
+.mini-nav ul li a:hover{
+    font-weight: bold;
+    /*color: #ed242c;*/
+}
+
+
+
+.index_banner{position:relative;height:450px;margin-top:60px;}
+.index_banner li{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:450px;}
+.index_banner li.two{background:url(../images/banner02.jpg) center center no-repeat;background-size: cover;}
+.index_banner li.three{background:url(../images/banner03.jpg)  center center no-repeat;background-size: cover;}
+.index_banner li.one{background:url(../images/banner01.jpg)  center center no-repeat;background-size: cover;}
+
+.index_banner li a{display:block;margin:0 auto;width:100%;height:450px;}
+.index_banner cite{position:absolute;bottom:10px;left:50%;z-index:999;display:block;margin-left:-114px;width:295px;height:5px;_display:none;}
+.index_banner cite span{float:left;display:block;margin:0 4px;width:40px;height:5px;background-color:#e5e5e5;text-indent:-999em;opacity:.8;cursor:pointer;}
+.index_banner cite span:hover{background-color:#f5f5f5;}
+.index_banner cite span.cur{background-color:#fd564f;cursor:default;}
+
+
+
+
+.cca {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.cca .ccamain {
+    max-width: 1000px;
+    position: relative;
+    height: 100%;
+}
+
+.cca .banner {
+
+    width: 100%;
+
+
+
+}
+
+.cca .banner .ccamain span.topspan {
+    width: 100%;
+    margin-left: 40px;
+    font-size: 33px;
+    color: #666666;
+}
+
+.cca .banner .ccamain span.quick {
+    font-size: 50px;
+    font-weight: 700;
+    color: #666666;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.cca .banner .ccamain span.done {
+    font-size: 90px;
+    color: #6895f6;
+}
+
+.cca .banner .ccamain span.done e {
+    color: #fb4f53;
+}
+
+.cca .banner .ccamain span.done b {
+    font-size: 60px;
+    color: #666666;
+}
+
+.cca .banner .ccamain ul {
+    padding-top: 18px;
+}
+
+.cca .banner .ccamain ul li {
+    display: inline-block;
+}
+
+.cca .banner .ccamain ul li {
+    color: #999999;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.cca .banner .ccamain ul li:first-child {
+    color: #666666;
+    font-size: 20px;
+    width: 100%;
+}
+
+.cca .banner .ccamain ul li:first-child span {
+    color: #5586ef
+}
+/*
+.cca a {
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: none;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 30px;
+	background-color: #6895f6;
+	line-height: 50px;
+	box-shadow: 5px 5px 5px #336ae0;
+}
+*/
+.ccabtn a {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: #6895f6;
+    line-height: 50px;
+    box-shadow: 5px 5px 5px #336ae0;
+}
+.cca .ccabtn {
+    margin-top: 45px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+.cca .banner .ccamain button {
+    position: absolute;
+}
+
+.cca .banner .ccamain .prospan {
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+
+.cca .banner .ccamain .prospan span {
+    width: 100%;
+}
+
+.cca .banner .ccamain .prospan span:first-child {
+    font-size: 22px;
+    color: #666666;
+}
+
+.cca .banner .ccamain .prospan span:nth-child(2) {
+    font-size: 26px;
+    color: #666666;
+    font-weight: 700;
+}
+
+.cca .banner .ccamain table {
+    height: 455px;
+    background-color: red;
+    width: 100%;
+}
+
+.cca .bannera {
+    padding: 60px 0 0 0;
+    height: 1160px;
+    background: url(../images/banner2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.cca .ccamain .protop {
+    padding-left: 15px;
+    border-left: 3px solid #6895f6;
+}
+
+.cca .ccamain .protop span:first-child {
+    font-size: 40px;
+    color: #6895f6;
+    width: 100%;
+}
+
+.cca .ccamain .protop span:nth-child(2) {
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+    color: #666666;
+}
+
+.cca .bannera .ccamain .promain {
+    margin: 0 0;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.cca .bannera .ccamain .promain .lidiv {
+    float: left;
+    width: 468px;
+    height: 379px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-top: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.cca .bannera .ccamain .promain .lidiv:nth-child(even) {
+    margin-left: 30px;
+}
+
+.cca .bannera .ccamain .promain .lidiv span.shuzi {
+    height: 48px;
+    background-size: 100%;
+    padding-left: 60px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.cca .bannera .ccamain .promain .lidiv:first-child span.shuzi {
+    background: url(../images/01.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv:nth-child(2) span.shuzi {
+    background: url(../images/02.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv:nth-child(3) span.shuzi {
+    background: url(../images/03.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv:nth-child(4) span.shuzi {
+    background: url(../images/04.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv span.shuzi e {
+    margin-right: 30px;
+    background: url(../images/ccadian.png) no-repeat;
+    background-position-y: 50%;
+    background-position-x: 30%;
+    background-size: 16px;
+    font-size: 24px;
+    color: #666666;
+    width: 30px;
+}
+
+.cca .bannera .ccamain .promain .lidiv span.shuzi e b {
+    margin-left: 30px;
+}
+
+.cca .bannera .ccamain .promain .lidiv .proa {
+    height: 216px;
+    background: url(../images/project1.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.cca .bannera .ccamain .promain .lidiv .prob,
+.cca .bannera .ccamain .promain .lidiv .prod {
+    padding-top: 0;
+    margin-top: 40px;
+}
+
+.cca .bannera .ccamain .promain .lidiv ul {
+    padding-top: 0;
+    padding-left: 15px;
+}
+
+.cca .bannera .ccamain .promain .lidiv li {
+    padding-left: 15px;
+    background: url(../images/yuan.png) no-repeat;
+    background-position-y: 50%;
+    font-size: 14px;
+    color: #999999;
+    display: block;
+}
+
+.cca .bannera .ccamain .promain .proba {
+    margin-top: 30px;
+    background: url(../images/proba.png) no-repeat;
+    background-size: 100%;
+    height: 60px;
+    width: 378px;
+}
+
+.cca .bannera .ccamain .promain .proba .spandiv {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.cca .bannera .ccamain .promain .proba .spandiv span {
+    padding: 0 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.cca .bannera .ccamain .promain .lidiv .proc {
+    height: 270px;
+    width: 280px;
+    margin-top: 15px;
+    background: url(../images/proc.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv .proda {
+    height: 60px;
+    width: 378px;
+    margin-top: 40px;
+    background: url(../images/prod.png) no-repeat;
+}
+
+.cca .bannera .ccamain .promain .lidiv .proda .daspan {
+    padding-top: 60px;
+}
+
+.cca .bannera .ccamain .promain .lidiv .proda .daspan span {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    padding: 0 8px;
+}
+
+.cca .bannera .ccamain .ccabtn {
+    margin-top: 25px;
+    height: 60px;
+    width: 240px;
+}
+
+.cca .bannerb {
+    height: 700px;
+    padding-top: 60px;
+}
+
+.cca .bannerb .protop {
+    margin-bottom: 90px;
+}
+
+.cca .bannerb .promainb {
+    height: 370px;
+    background: url(../images/six.png) no-repeat;
+}
+
+.cca .bannerb .ccabtn,
+.cca .bannerc .ccabtn {
+    height: 60px;
+    width: 240px;
+    margin-top: 0;
+}
+
+.cca .bannerc {
+    background-color: #f5f5f5;
+    height: 769px;
+}
+
+.cca .bannerc .ccamain {
+    padding-top: 70px;
+}
+
+.cca .bannerc .ccamain .procmain {
+    margin-top: 60px;
+}
+
+.cca .bannerc .ccamain .procmain ul {
+    margin-bottom: 70px;
+    height: 393px;
+}
+
+.cca .bannerc .ccamain .procmain li {
+    float: left;
+    padding: 20px 0 0 32px;
+    box-shadow: 10px 10px 10px #dddddd;
+    position: relative;
+    width: 447px !important;
+    height: 170px;
+    background-color: #ffffff;
+}
+
+.cca .bannerc .ccamain .procmain li:nth-child(even) {
+    margin-left: 60px;
+}
+
+.cca .bannerc .ccamain .procmain ul li:first-child,
+.cca .bannerc .ccamain .procmain ul li:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.cca .bannerc .ccamain .procmain ul li img {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: -24px;
+    top: 24px
+}
+
+.cca .bannerc .ccamain .procmain li span {
+    color: rgb(85, 134, 239);
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.cca .bannerc .ccamain .procmain li p {
+    font-size: 14px;
+    color: #999999;
+    padding-right: 15px;
+}
+
+.cca .bannerd {
+    /*background: url(../images/bgbottom.png) no-repeat;*/
+    /*background-size: 100% 150%;*/
+    height: 628px;
+    background-color: #6b95f2;
+    position: relative;
+    overflow: hidden;
+}
+
+.cca .bannerd .bgimg {
+    position: absolute;
+    height: 100%;
+}
+
+.cca .bannerd .protop {
+    border-left: 3px solid #ffffff;
+}
+
+.cca .bannerd .protop span {
+    color: #ffffff !important;
+}
+
+.cca .bannerd .ccamain .dbottom {
+    height: 300px;
+    margin: 50px 0;
+}
+
+.cca .bannerd .ccamain .dbottom img {
+    width: 309px;
+    float: left;
+    margin-right: 18px;
+}
+
+.cca .bannerd .ccamain .ccabtn a {
+    background-color: #ffffff;
+    color: #6895f6;
+}
+
+.line{
+    margin-left: 10px;
+    border-top:1px solid #dddddd;
+    height: 10px;
+    position: relative;
+    display: inline-block;
+}
+.bannera .line{
+
+    width: 830px;
+
+}
+.line:after{
+    content: url(../images/yuan1.png);
+    position: absolute;
+    right: 0;
+    top:-10px;
+}
+.bannerb .line{
+    width: 146px;
+}
+.bannerc .line{
+
+    width: 730px;
+    top:1px
+
+}
+.bannerd .line{
+
+    width: 760px;
+    top:1px
+
+}
+.bannerd .ccamain{
+    padding-top: 60px;
+}
+.form_wrap{
+    height: 474px;
+    overflow: hidden;
+    margin: 0 0 ;
+}
+.form_wrap img{
+
+}
+
+
+.footer{width:100%;background:#2d404f;text-align:center;font-size:16px;color:#fff;}
+.footer1{width:1200px;margin:0 auto;}
+.footer1 li{float:Left;margin:20px 40px;}
+.footer a{background:none;box-shadow:none;}
