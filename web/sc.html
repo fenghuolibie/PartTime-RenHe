@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会计实操</title>
+<link rel="stylesheet" type="text/css" href="../css/top.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sc.css"/>
+<script type="text/javascript" src="../js/jquery v3.2.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	var rollSet = $('#top');
+    var offset = rollSet.offset();              
+	var scrollTop = $(window).scrollTop();      
+	var fheight = $("#top").height()+$("#top11").height();   
+
+	if(offset.top<fheight){  
+		rollSet.removeClass('div0_top2').addClass('div0_top');}
+	else{
+		$("#empty").show();
+		rollSet.removeClass('div0_top').addClass('div0_top2');
+	}
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >$("#top11").height()) {    
+			   $("#empty").show();
+                rollSet.removeClass('div0_top').addClass('div0_top2');
+        } else {
+			 $("#empty").hide();
+            rollSet.removeClass('div0_top2').addClass('div0_top');
+        }
+    });
+
+});
+</script>
+<script>
+(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
+b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
+s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
+})(window,document,"script","_qha",241769,false);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?835f83c173520ab8286211b2c717c3be";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5663a20077a74cb338f5590631365e4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <style type="text/css">
+    @media (max-width: 999px) {
+      .foot-fixed{position: fixed;bottom: 0;width:100%;background:rgba(25,25,25,.66);height:50px;line-height: 1.3rem;}
+      .clearbox li{display: inline-block;width:24%;text-align: center;padding-top:5px;}
+      .clearbox li a{color:#fff;line-height:150px;font-weight: bold;display: block; height: 45px;border-left: 0.03rem solid #131922; border-right: 0.03rem solid #404042;background-image: url(../img/kefu.png);background-repeat: no-repeat;}
+      .clearbox li:nth-child(1) a, .clearbox li.active:nth-child(1) a{ background-position: 50% -10px;}
+      .clearbox li:nth-child(2) a, .clearbox li.active:nth-child(2) a {
+        background-position: 50% -174px;
+      }
+      .clearbox li:nth-child(3) a, .clearbox li.active:nth-child(3) a {
+        background-position: 50% -258px;
+      }
+      .clearbox li:nth-child(4) a, .clearbox li.active:nth-child(4) a {
+        background-position: 50% -342px;
+      }
+    }
+    @media (min-width: 1100px) {
+      .foot-fixed{position: fixed;bottom: 0;width:100%;background:rgba(25,25,25,.66);line-height: 1.3rem;}
+      .clearbox li{display: inline-block;width:24%;text-align: center;padding-top:10px;}
+      .clearbox li a{height: 60px;line-height:95px;color:#fff;font-weight: bold;display: block;border-left: 0.03rem solid #131922; border-right: 0.03rem solid #404042;background-image: url(../img/kefu.png);background-repeat: no-repeat;}
+      .clearbox li:nth-child(1) a, .clearbox li.active:nth-child(1) a{ background-position: 50% -8px;}
+      .clearbox li:nth-child(2) a, .clearbox li.active:nth-child(2) a {
+        background-position: 50% -174px;
+      }
+      .clearbox li:nth-child(3) a, .clearbox li.active:nth-child(3) a {
+        background-position: 50% -258px;
+      }
+      .clearbox li:nth-child(4) a, .clearbox li.active:nth-child(4) a {
+        background-position: 50% -342px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="top11" id="top11">
+   <div class="top2">
+     <span class="top2-1">全国分校</span>
+     <div class="area1">
+       <ul>
+         <li><a href="#" class="area2">华北地区</a></li><li><a href="#" class="area3">北京</a></li>
+         <li><a href="#" class="area3">天津</a></li><li><a href="#" class="area3">河北</a></li>
+         <li><a href="#" class="area3">山西</a></li><li><a href="#" class="area3">内蒙古</a></li>
+         <li><a href="#" class="area2">华中地区</a></li><li><a href="#" class="area3">河南</a></li>
+         <li><a href="#" class="area3">湖南</a></li><li><a href="#" class="area3">湖北</a></li>
+         <li><a href="#" class="area2" style="margin-left: 15px;">华东地区</a></li><li><a href="#" class="area3">上海</a></li>
+         <li><a href="#" class="area3">江苏</a></li><li><a href="#" class="area3">浙江</a></li>
+         <li><a href="#" class="area3">安徽</a></li><li><a href="#" class="area3">福建</a></li>
+         <li><a href="#" class="area3">江西</a></li><li><a href="#" class="area3">山东</a></li>
+       </ul>
+     </div>
+     <div class="area1">
+       <ul>
+         <li><a href="#" class="area2">西北地区</a></li><li><a href="#" class="area3">陕西</a></li>
+         <li><a href="#" class="area3">甘肃</a></li><li><a href="#" class="area3">青海</a></li>
+         <li><a href="#" class="area3">宁夏</a></li><li><a href="#" class="area3">新疆</a></li>
+         <li><a href="#" class="area2" style="margin-left: 15px;">东北地区</a></li><li><a href="#" class="area3">辽宁</a></li>
+         <li><a href="#" class="area3">吉林</a></li><li><a href="#" class="area3">黑龙江</a></li>
+         <li><a href="#" class="area2">西南地区</a></li><li><a href="#" class="area3">重庆</a></li>
+         <li><a href="#" class="area3">四川</a></li><li><a href="#" class="area3">贵州</a></li>
+         <li><a href="#" class="area3">云南</a></li><li><a href="#" class="area2">华南地区</a></li>
+         <li><a href="#" class="area3">广东</a></li><li><a href="#" class="area3">广西</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+
+<div class="div0_top" style="display:none;" id="empty"></div>
+<div class="div0_top" id="top">
+  <div class="top1">
+     <img src="../img/logo.jpg" width="500" height="50" class="logo" />
+     <span class="school">全国分校&nbsp;&nbsp;<img src="../img/sanjiao.png" width="12" height="6" /></span>
+     <a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768" target="_blank"><span class="phone">全国咨询热线：400-101-2295</span></a>
+  </div>
+</div>
+<div style="width:100%;min-width:1200px;height:70px;">
+<div class="nav">
+   <div class="nav1">
+     <a href="../index.html">首页</a><a href="cma.html">CMA</a>
+     <a href="cpa.html">CPA</a><a href="zc.html">会计职称</a>
+     <a href="sc.html" class="check">会计实操</a><a href="cw.html">财务管理</a>
+     <a href="cca.html">CCA</a><a href="sz.html">会计双证</a>
+     <a href="sw.html">税务实务</a><a href="sy.html">核算实验</a>
+     <a href="jssz.html">精算实战</a><a href="jy.html">财税就业</a>
+     <a href="scsy.html">财税实操</a>
+   </div>
+</div>
+</div>
+  <div class="wrap" style="max-width: 1500px;">
+    <img src="../img/sc/sc1.jpg" width="100%"/>
+    <img src="../img/sc/sc2.jpg" width="100%"/>
+    <img src="../img/sc/sc3.jpg" width="100%"/>
+    <img src="../img/sc/sc4.jpg" width="100%"/>
+    <img src="../img/sc/sc5.jpg" width="100%"/>
+    <img src="../img/sc/sc6.jpg" width="100%"/>
+    <img src="../img/sc/sc7.jpg" width="100%"/>
+  <a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768" target="_blank">
+    <img src="../img/sc/sc8.jpg" width="100%"/>
+  </a>
+    <img src="../img/sc/sc9.jpg" width="100%"/>
+    <img src="../img/sc/sc10.jpg" width="100%"/>
+    <img src="../img/sc/sc11.jpg" width="100%"/>
+    <div style="background: url(../img/sc/sc12.png);width: 100%;padding-top:80px;height:820px;">
+       <img src="../img/sc/sc12-1.png" style="margin:0 auto;" height="148" width="666"/>
+      <div style="width: 1000px;height: 350px;margin:30px auto">
+        <div style="width:300px;text-align:center;font-size: 45px;float: left">
+          <h3 style="color: #039df4;">8000</h3>
+          <h6>家企业真账案例</h6>
+          <p style="margin-top:30px;font-size: 20px;margin-bottom: 10px;">仁和财税服务公司</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">全国8000家企业</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">真实捕捉行业财税案例</p>
+        </div>
+        <div style="width:300px;text-align:center;font-size: 45px;float: left">
+          <h3 style="color: #039df4;">20</h3>
+          <h6>多个行业</h6>
+          <p style="margin-top:30px;font-size: 20px;margin-bottom: 10px;">商业/工业/房地产业/</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">外贸/建安业/酒店连锁业/装</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">饰行业/物流公司/汽车业/医</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">药/上市公司，真真实实学习</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">各行业账务精髓 </p>
+        </div>
+        <div style="width:300px;text-align:center;font-size: 45px;float: left">
+          <h3 style="color: #039df4;">800</h3>
+          <h6>名资深老会计</h6>
+          <p style="margin-top:30px;font-size: 20px;margin-bottom: 10px;">仁和实战老师均具备</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">十年以上中大型企业财务</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">阅历，一教就会，轻松领</p>
+          <p style="font-size: 20px;margin-bottom: 10px;">会财税那些事</p>
+        </div>
+      </div>
+      <div style="width: 260px;height:50px;line-height: 50px;background:#039df4;font-size: 24px;
+      color: #fff;text-align: center;border-radius: 5px;margin:30px auto; cursor: pointer">
+        立即咨询
+      </div>
+    </div>
+    <img src="../img/sc/sc13.jpg" width="100%"/>
+    <img src="../img/sc/sc14.jpg" width="100%"/>
+    <img src="../img/sc/sc15.jpg" width="100%"/>
+    <img src="../img/sc/sc16.jpg" width="100%"/>
+    <img src="../img/sc/sc17.jpg" width="100%"/>
+    <img src="../img/sc/sc18.jpg" width="100%"/>
+    <img src="../img/sc/sc19.jpg" width="100%"/>
+    <img src="../img/sc/sc20.jpg" width="100%"/>
+    <img src="../img/sc/sc21.jpg" width="100%"/>
+    <img src="../img/sc/sc22.jpg" width="100%"/>
+    <img src="../img/sc/sc23.jpg" width="100%"/>
+    <img src="../img/sc/sc24.jpg" width="100%"/>
+    <img src="../img/sc/sc25.jpg" width="100%"/>
+ <a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768" target="_blank">
+   <img src="../img/sc/sc26.jpg" width="100%"/>
+ </a>
+    <img src="../img/sc/sc27.jpg" width="100%"/>
+    <img src="../img/sc/sc28.jpg" width="100%"/>
+    <div style="width:1000px;margin:50px auto;">
+      <p style="text-align: center;font-size: 30px;font-weight: bold;margin-bottom:70px;">实操培训课程（核算会计班）</p>
+      <img src="../img/sc/sc30.png" width="100%"/>
+    </div>
+    <img src="../img/sc/sc31.png" width="100%"/>
+    <img src="../img/sc/sc32.jpg" width="100%"/>
+    <img src="../img/sc/sc33.jpg" width="100%"/>
+    <img src="../img/sc/sc34.jpg" width="100%"/>
+    <img src="../img/sc/sc35.jpg" width="100%"/>
+    <img src="../img/sc/sc36.jpg" width="100%"/>
+    <img src="../img/sc/sc37.jpg" width="100%"/>
+    <img src="../img/sc/sc38.jpg" width="100%"/>
+    <img src="../img/sc/sc39.jpg" width="100%"/>
+    <img src="../img/sc/sc40.jpg" width="100%"/>
+    <img src="../img/sc/sc41.jpg" width="100%"/>
+    <img src="../img/sc/sc42.jpg" width="100%"/>
+    <img src="../img/sc/sc43.jpg" width="100%"/>
+    <img src="../img/sc/sc44.jpg" width="100%"/>
+    <img src="../img/sc/sc45.jpg" width="100%"/>
+  <a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768" target="_blank">
+    <img src="../img/sc/sc46.jpg" width="100%"/>
+  </a>
+  <div class="foot">
+    <div class="foot1">
+      版权所有 © 2013-2017 仁和会计集团-苍南网盟网络科技有限公司  鄂ICP备13010580号
+    </div>
+  </div>
+</div>
+<div class="foot-fixed">
+  <ul class="clearbox">
+    <li class="active"><a href="../index.html" >首页</a></li>
+    <li><a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768"  >免费试听</a></li>
+    <li><a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768" >在线报名</a></li>
+    <li><a href="http://p.qiao.baidu.com/cps/chat?siteId=11692963&userId=24978768"  >在线咨询</a></li>
+  </ul>
+</div>
+</body>
+</html>

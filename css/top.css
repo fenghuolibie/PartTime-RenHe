@@ -1,0 +1,145 @@
+@charset "utf-8";
+*{margin:0;padding: 0;}
+a{
+	color:inherit;
+	text-decoration:none;}
+
+ul{ list-style:none;}
+
+.wrap{width:100%;min-width:1300px;margin:0 auto;}
+.wrap a{line-height: 0;}
+.wrap img{display: block;
+	max-width: 100%;
+	height: auto;}
+
+.top11{
+	min-width:1300px;
+	height:80px;
+	width:100%;
+	padding:0;
+	border-bottom:1px solid #ddd;}
+
+.top2{
+	width:1135px;
+	height:60px;
+	margin:0 auto;
+	padding-top: 20px;}
+
+.top2-1{
+	line-height: 26px;
+    font-size: 16px;
+    color: #404040;
+    display: inline-block;
+    width: 45px;
+    float: left;}
+
+.area1{
+    float: left;
+    width: 1080px;}
+
+.area1 ul{
+	width:1080px;}
+
+.area1 ul li{
+	float: left;
+    line-height: 22px;
+    position: relative;
+    margin: 0 3px;
+    z-index: 99;
+    padding-bottom: 5px;}
+
+.area2{
+	color: #7c7c7c;
+    cursor: default;
+	display: inline-block;
+    font-size: 14px;
+	padding: 0 8px;}
+
+.area3{
+	display: inline-block;
+    font-size: 15px;
+    color: #404040!important;
+    padding: 0 8px;}
+
+.area3:hover{
+	background: #fc6a63;
+    color: #fff!important;}
+
+.div0_top{
+	position:relative;
+	background-color:red;
+	width:100%;
+	min-width:1300px;
+	margin:0 auto;
+	height: 90px;}
+	
+.div0_top2{
+	position:fixed;
+	background-color:red;
+	width: 100%;
+	min-width: 1300px;
+	height: 90px;
+	z-index:99;
+	opacity:0.9;
+	top:0;}
+
+.top1{
+	width:1000px;
+	margin:0 auto;
+	height:90px;}
+
+.logo{
+	float:left;
+	margin-top:20px;}
+
+.school{
+	padding:8px 10px;
+	float:left;
+    cursor:pointer;
+	margin-top:25px;
+	background:white;
+	border:1px solid #ddd;
+	border-radius:5px;}
+
+.phone{
+	float:right;
+	margin-top: 33px;
+    font-size: 20px;
+    color: #fff;}
+
+.nav{
+    background:#fff;
+    height: 60px;
+	padding-top:10px;
+	margin:0 auto;}
+
+.nav1{
+	width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px auto;}
+
+.nav1 a{
+	font-family:"微软雅黑";
+	display: block;
+    float: left;
+    width:92px;
+	  height:50px;
+	text-align: center;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;}
+
+.check{
+	background:#f90;
+	color: #fff;
+	border-radius:5px;}
+
+.foot{width:100%;min-width:1300px;height:70px;background:#ddd;}
+.foot1{width:700px;height:50px;margin:0 auto;text-align:center;line-height:5em;}
+.foot-fixed{font-size:13px}
+
+
+
+
+

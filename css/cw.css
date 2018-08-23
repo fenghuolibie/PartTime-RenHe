@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+*{margin:0;font-family:'微软雅黑';}
+
+
+.cw1{
+	background: url(../img/cw/cw1.png) no-repeat center 0px;
+	width:1920px;
+	margin:0 auto;
+	height: 620px;}
+
+.cw2{
+	width:100%;
+	background: #104fea;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+	height:120px;}
+
+.cw2-1{
+	width:1150px;
+	margin:0 auto;}
+
+.cw2-2{
+	margin-top: 20px;
+	color: #fff;
+    font-size: 24px;
+    line-height: 36px;}
+
+.cw3{
+	width:1150px;
+	height:400px;
+	margin:0 auto;}
+
+.cw3 h2{
+	font-size: 46px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 60px 0;}
+
+.cw3-1{
+	float:left;
+	width:380px;
+	height:275px;
+	text-align: center;
+    box-shadow: 5px 0 0 #f0f0f0;}
+
+.cw3-1 p{
+	font-size: 17px;
+    color: #797575;
+    margin-top: 40px;}
+
+.cw4{
+	width:1170px;
+	height:850px;
+	margin:0 auto;}
+
+.cw4-1{
+	text-align:center;
+	width:1170px;
+	height:100px;}
+
+.cw4-1 h2{
+	font-size: 46px;
+	margin-top: 20px;
+    margin-bottom: 10px;}
+
+.cw4-1 p{
+	font-size: 20px;
+    color: #797575;
+	margin-top:20px;}
+
+.cw4-2{
+	float:right;
+	margin-right:65px; 
+	width:520px;
+	margin-top:120px;}
+
+dl{margin-bottom: 60px;}
+
+dt{
+	float: left;
+    width: 20%;}
+
+dd{
+	float: left;
+    width: 80%;}
+
+dd h3{
+	font-size: 20px;
+    color: red;
+    margin-top: 0;}
+
+dd p{
+	font-size: 16px;
+    color: #797575;}
+
+.cw4-3{
+	background:red;
+    font-size: 26px;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20%;}
+
+.cw5{
+	width:100%;
+	height:800px;
+	margin:0 auto;
+	padding-top:50px;
+	background:#e7f0f3;}
+
+.cw5-1{
+	width:1170px;
+	height:800px;
+	margin:0 auto;}
+
+.cw5-1 h2{
+	font-size: 46px;
+    text-align: center;}
+
+.cw5-2{
+	width:550px;
+	height:350px;
+	float:left;
+	margin-right: 30px;}
+
+.cw5-3{
+	width: 96%;
+    height: 284px;
+    background: #fff;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #c6cdd0;}
+
+.cw5-3 h2{
+	height: 50px;
+    background: #71afff;}
+
+.cw5-3 h3{
+	color: #71afff;
+    margin: 40px 0 0 30px;
+    float: left;}
+
+.cw5-3 p{
+	color: #797575;
+    margin: 20px 0 0 30px;
+    float: left;
+    font-size: 16px;}
+
+.cw6{
+	width:1200px;
+	height:760px;
+	padding-top:70px;
+	margin:0 auto;}
+
+.cw6-1{
+	width:650px;
+	height:600px;
+	float:left;
+	margin-left:30px;}
+
+.cw6-1 p{
+	font-size: 16px;
+    color: #797575;
+    margin-bottom: 40px;}
+
+.cw6-2{
+	width:460px;
+	height:484px;
+	float:left;
+	margin-left:50px;
+	margin-top:50px;}
+	

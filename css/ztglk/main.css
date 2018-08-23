@@ -1,0 +1,137 @@
+body {
+    background: #fff;
+    font-family: "SimHei";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+html {
+    height: 100%;
+}
+a{
+    color: #fff;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.animate-box {
+    opacity: 0;
+}
+.clear{clear: both;}
+
+.opentalk{cursor: pointer;}
+
+.mini-top{
+    width: 100%;
+    background: url(../../img/banner/topbg.png) repeat;;
+    height: 91px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.mini-header{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-logo{
+
+    height: 45px;
+    margin-top:20px;
+    float:left;
+}
+.mini-nav{
+    width: 290px;
+    height: 45px;
+    margin-top:10px;
+    float: right;
+}
+.mini-nav ul{
+    margin: 0 auto;
+    padding: 0px;
+}
+.mini-nav ul li {
+    float: left;
+    font-size: 16px;
+    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-left: 1px solid #999999;
+}
+.mini-nav ul li a{
+    color: #fff;
+}
+.mini-nav ul li a:hover{
+    font-weight: bold;
+}
+
+#top{margin-top:69px;background: url(../../img/ztglk/topbg.jpg) center no-repeat;height: 500px;}
+#top img{margin-top:80px;}
+#title{background: #104fea;padding:30px 0;color: #fff;font-size: 24px;line-height: 36px;}
+#title img{text-align: center;display: block;margin-left: 20%;}
+#title p{margin-top:20px;}
+
+#part1 h2{font-size:46px;font-weight: bolder;text-align: center;margin: 60px 0;}
+#part1 h2 span{color: #fc466b;}
+#part1 .col-sm-4{text-align: center;box-shadow: 5px 0 0 #f0f0f0;}
+#part1 p{font-size:17px;color:#797575;margin-top:40px;}
+#part1 p span{color: #fc466b;font-weight: bold;}
+#part1 .last{box-shadow: none;}
+
+#part2{background: #e7f0f3;padding:5em 0;}
+#part2 h2{font-size:46px;font-weight: bolder;text-align: center;margin-bottom: 40px;}
+#part2 h2 span{color: #fc466b;}
+
+
+#part3{padding-top:5em;}
+.part3_1{text-align: center;}
+.part3_1 h2{font-size: 46px;}
+.part3_1 h2 span{color: #fc466b;}
+.part3_1 p{font-size: 20px;color: #797575;}
+.part3_1 img{margin:10px 0 20px 0;}
+#part3 .col-sm-5{margin-top:40px;}
+#part3 .col-sm-7{margin-top:120px;padding-left: 40px;}
+#part3 .col-sm-7 dl{margin-bottom: 60px;}
+#part3 .col-sm-7 dl dt{float: left;width: 20%;}
+#part3 .col-sm-7 dl dd{float: left;width: 80%;}
+#part3 dl dd h3{font-size:20px;color: #fc466b;margin-top: 0;}
+#part3 dl dd p{font-size: 16px;color: #797575;}
+#part3 .col-sm-7 span{background: #104fea;font-size: 26px;color: #fff;padding:20px 30px;border-radius: 10px;display: inline-block;margin-left: 20%;}
+
+#part4{background: #e7f0f3;padding:60px 0;}
+#part4 h2{font-size: 46px;text-align: center;margin: 0;}
+#part4 h2 span{color: #fc466b;}
+#part4 .cwjy{width: 96%;height: 284px;background: #fff;margin-top:50px;box-shadow: 5px 5px 10px #c6cdd0;}
+.cwjy img{float:left;}
+.cwjy h2{height: 50px;background: #71afff;}
+.cwjy h3{color: #71afff;margin:40px 0 0 30px;float: left;}
+.cwjy p{color: #797575;margin:20px 0 0 30px;float: left;font-size:16px;}
+#part4 .col-sm-6 span{margin:152px 0 0 90px;background: #104fea;font-size: 26px;color: #fff;padding:20px 30px;border-radius: 10px;display: inline-block;}
+
+#part5{width: 100%;height:938px;background: url(../../img/ztglk/part6bg.jpg) center no-repeat;text-align: center;}
+#part5  span.zxbtn{background: #104fea;font-size: 26px;color: #fff;padding:20px 30px;border-radius: 10px;display: inline-block;}
+.part5{width:1058px;margin: 0 auto;color: #fff;}
+.part5 h2{padding: 60px 0;margin: 0;font-size: 46px;}
+.part5 h2 span{color: #104fea;font-size: 60px;}
+
+
+
+#part6{width: 100%;background: url(../../img/ztglk/part7.jpg) center no-repeat;height:234px;}
+#part6 h2{font-size: 46px;color: #fff;margin: 80px 0 0 50px;}
+#part6 p{font-size: 24px;color: #fff;line-height: 50px;margin-top:60px;}
+
+
+#part7{padding:6em 0;}
+#part7 p{font-size:16px;color: #797575;margin-bottom: 40px;}
+.part7{text-align: center;}
+#part7 span{background: #104fea;font-size: 26px;color: #fff;padding:20px 30px;border-radius: 10px;}
+
+.footer{width:100%;background:#0b3fbd;height:253px;text-align:center;font-size:16px;color:#fff;}
+.footer1{width:1200px;margin:0 auto;}
+.footer1 li{float:Left;margin:20px 40px;}

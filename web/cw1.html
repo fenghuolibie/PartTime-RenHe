@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <title>六大管理课_仁和会计</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <link href="../css/ztglk/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/ztglk/animate.min.css" rel="stylesheet">
+    <link href="../css/ztglk/main.css" rel="stylesheet">
+    <link href="../css/selectarea.css" rel="stylesheet">
+    <script>var basePath = "http://site.whrhkj.com/";
+    var CurrentProv = "";
+    var CurrentCity = "null"</script>
+</head>
+<body>
+
+
+﻿
+<div class="mini-top">
+    <div class="mini-header">
+        <div class="mini-logo">
+            <div class="logoimg">
+                <a href="../index.html">
+                    <img src="http://site.whrhkj.com/public/img/banner/logo.png" style="height:50px;">
+                </a>
+                <i>全国分校TERMINUS
+                    <ul class="png">
+                        <li><a href="http://hb.site.whrhkj.com" target="_blank" title="湖北分校">湖北分校</a>
+                            <a href="http://bj.site.whrhkj.com" target="_blank" title="北京分校">北京分校</a></li>
+                        <li>
+                            <a href="http://sh.site.whrhkj.com" target="_blank" title="上海分校">上海分校</a>
+                            <a href="http://shenzhen.site.whrhkj.com" target="_blank" title="深圳分校">深圳分校</a></li>
+                        <li>
+                            <a href="http://cq.site.whrhkj.com" target="_blank" title="重庆分校">重庆分校</a>
+                            <a href="http://jx.site.whrhkj.com" target="_blank" title="江西分校">江西分校</a></li>
+                        <li>
+                            <a href="http://zj.site.whrhkj.com" target="_blank" title="浙江分校">浙江分校</a>
+                            <a href="http://sc.site.whrhkj.com" target="_blank" title="四川分校">四川分校</a></li>
+                        <li>
+                            <a href="http://gz.site.whrhkj.com " target="_blank" title="贵州分校">贵州分校</a>
+                            <a href="http://sx.site.whrhkj.com" target="_blank" title="陕西分校">陕西分校</a></li>
+                        <li>
+                            <a href="http://ah.site.whrhkj.com" target="_blank" title="安徽分校">安徽分校</a>
+                            <a href="http://sd.site.whrhkj.com" target="_blank" title="山东分校">山东分校</a></li>
+                        <li>
+                            <a href="http://fj.site.whrhkj.com" target="_blank" title="福建分校">福建分校</a>
+                            <a href="http://nx.site.whrhkj.com" target="_blank" title="宁夏分校">宁夏分校</a></li>
+                        <li>
+                            <a href="http://qh.site.whrhkj.com" target="_blank" title="青海分校">青海分校</a>
+                            <a href="http://hlj.site.whrhkj.com" target="_blank" title="黑龙江分校">黑龙江分校</a></li>
+                        <li>
+                            <a href="http://guangzhou.site.whrhkj.com/" target="_blank" title="深圳分校">广东各分公司</a>
+                            <a href="http://js.site.whrhkj.com" target="_blank" title="江苏分校">江苏分校</a></li>
+                        <li>
+                            <a href="http://ln.site.whrhkj.com" target="_blank" title="辽宁分校">辽宁分校</a>
+                            <a href="http://tj.site.whrhkj.com " target="_blank" title="天津分校">天津分校</a></li>
+                        <li>
+
+                            <a href="http://heb.site.whrhkj.com/" target="_blank" title="河北分校">河北分校</a>
+                            <a href="http://hn.site.whrhkj.com/" target="_blank" title="湖南分校">湖南分校</a></li>
+                        <li><a href="http://xj.site.whrhkj.com/" target="_blank" title="新疆分校">新疆分校</a><a href="#"
+                                                                                                         target="_blank"
+                                                                                                         class="opentalk"
+                                                                                                         title="其他分校">其他</a>
+                        </li>
+                    </ul>
+                </i>
+            </div>
+            <ul style="display:none;">
+                <li><a href="http://bj.site.whrhkj.com/">北京分校</a></li>
+                <li><a href="http://sh.site.whrhkj.com/">上海分校</a></li>
+                <li><a href="http://tj.site.whrhkj.com">天津分校</a></li>
+                <li><a href="http://chengdu.site.whrhkj.com/">成都分校</a></li>
+                <li class="smore"><a href="javascript:;">更多</a></li>
+            </ul>
+        </div>
+        <div class="mini-nav">
+            <img src="http://site.whrhkj.com/public/img/400tel.png" style="margin-bottom:5px;">
+            <ul>
+                <li style="border: 0px;"><a href="http://site.whrhkj.com/">首页</a></li>
+                <li><a href="http://site.whrhkj.com/course">课程中心</a></li>
+                <li><a href="http://site.whrhkj.com/news">资讯中心</a></li>
+                <li><a href="http://site.whrhkj.com/brand">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="homeApply row no-gutter" style="display: none">
+    <div class="homeApply-gb" style="cursor:pointer;"><img src="http://site.whrhkj.com/public/img/tck-gb.png"></div>
+    <div class="applyTitle">
+        <h5>申请<span>免费</span>体验课</h5>
+        <h6>同时获取50元电子优惠券</h6>
+    </div>
+    <form class="homeForm" id="regform">
+        <div id="element_id">
+            <select class="province prov" name="prov" id="prov" style="border: 1px solid #dcdedb;"></select> <br>
+            <select class="city" id="city" name="city" style="border: 1px solid #dcdedb;"></select>
+            <label for="hname" id="labelHname"><input type="text" id="hname" name="name" class="ys" placeholder="您的姓名"
+                                                      value=""></label>
+            <label for="hnum" id="labelHnum" class="ys"><input type="text" id="mobile" name="mobile" class="ys"
+                                                               placeholder="您的手机号" value=""></label>
+            <label for="" class="col-100"><input type="num" id="dcode" class="ys" placeholder="输入验证码"><input
+                    type="button" onclick="sendCode($('#mobile').val(),this)" id="send_sms" value="发送验证码"
+                    style="cursor:pointer;"></label>
+            <select class="area dist" id="dist" name="dist"
+                    style="margin-top: -10px;border: 1px solid #dcdedb;"></select>
+            <input type="hidden" value="39" name="type">
+        </div>
+        <input type="button" value="立即申请" class="hsub">
+    </form>
+</div>
+
+<section id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 animate-box">
+                <img class="opentalk" src="http://site.whrhkj.com/public/img/ztglk/images/topzx.png">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="title">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 animate-box"><img src="http://site.whrhkj.com/public/img/ztglk/images/dl.png"></div>
+            <div class="col-sm-10 animate-box">
+                <p>财务“越老越吃香”的时代已经过去了！放眼当下财务界，年轻财务高管比比皆是！<br/>
+                    只拥有入门级财务证书，只精通会计核算，每天苦熬资历的财务人，是时候转型了！</p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section id="part1">
+    <div class="container">
+        <div class="row">
+            <h2 class="animate-box">你真的了解财务人员职场<span>生存困局</span>吗？</h2>
+            <div class="col-sm-4 animate-box ">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part1_img1.jpg">
+                <p>全国远超2000万人在学财务，<br/>
+                    而就业市场提供的财务岗位<br/>
+                    只有220万！<br/>
+                    面对汹涌求职大军，<br/>
+                    财务新人如何<span>脱颖而出</span>？
+                </p>
+            </div>
+            <div class="col-sm-4 animate-box">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part1_img2.jpg">
+                <p>随着会计行业变革，<br/>
+                    财务转型是大势所趋！<br/>
+                    财务机器人直接压缩基础核算岗位，<br/>
+                    核算会计下岗大潮下<br/>
+                    如何<span>激流勇进</span>？
+                </p>
+            </div>
+            <div class="col-sm-4 last animate-box">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part1_img3.jpg">
+                <p>目前我国高端财务人才缺口<br/>
+                    高达300万，<br/>
+                    想要成功攀向财务高峰，<br/>
+                    晋升其中一员，<br/>
+                    财务如何实现<span>完美蜕变</span>？
+                </p>
+            </div>
+        </div>
+    </div>
+    <img class="animate-box" style="width: 100%;" src="http://site.whrhkj.com/public/img/ztglk/images/part1_img4.jpg">
+</section>
+
+<section id="part2">
+    <div class="container">
+        <div class="row">
+            <h2 class="animate-box">仁和会计-六大管理课<br/>掌握财务管理<span>必备六大核心能力</span></h2>
+            <div class="col-sm-12 animate-box" style="text-align:center;">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part2.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="part3">
+    <div class="container">
+        <div class="row">
+            <div class="part3_1 animate-box">
+                <h2>系统的课程设置，贴合<span>企业财务人才需求结构</span></h2>
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part3_img1.png">
+                <p>六大管理课，直击企业财务管理核心问题，海量案例全面解析</p>
+            </div>
+            <div class="col-sm-5 animate-box"><img src="http://site.whrhkj.com/public/img/ztglk/images/part3_img2.png">
+            </div>
+            <div class="col-sm-7 animate-box">
+                <dl>
+                    <dt><img src="http://site.whrhkj.com/public/img/ztglk/images/part3_img3.png"></dt>
+                    <dd><h3>仁和会计教育实战教研组精心编制</h3>
+                        <p>整合多年财务实战管理教学经验，对教案讲义进行反复琢磨<br/>淬炼，去粗取精，留下教学成效斐然的精华内容编撰成册。
+                        </p></dd>
+                    <div class="clear"></div>
+                </dl>
+
+                <dl>
+                    <dt><img src="http://site.whrhkj.com/public/img/ztglk/images/part3_img4.png"></dt>
+                    <dd><h3>系统的课程设置，贴合企业用人需求</h3>
+                        <p>以企业需求为出发点，结合当下各中小企业财务管理现状系<br/>统设置课程内容，深度解析日常经营各环节常见问题与解决<br/>之道。
+                        </p></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt><img src="http://site.whrhkj.com/public/img/ztglk/images/part3_img5.png"></dt>
+                    <dd><h3>海量案例实时输送，学了即可灵活运用</h3>
+                        <p>上千家企业案例实时输送，通过丰富案例和专业现象解读重<br/>难点，全面提升财务人员实战管理技能，具备独立解决企业财<br/>务难题的能力。
+                        </p></dd>
+                    <div class="clear"></div>
+                </dl>
+                <span class="opentalk">了解课程详情   >>></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="part4">
+    <div class="container">
+        <div class="row">
+            <h2 class="animate-box">直击企业经营命脉，做企业真正需要的<span>财务精英</span>！</h2>
+            <div class="col-sm-6 animate-box">
+                <div class="cwjy">
+                    <h2></h2>
+                    <img src="http://site.whrhkj.com/public/img/ztglk/images/part4_img1.jpg">
+                    <h3>实战案例入手</h3>
+                    <p>从中小企业实战案例入手，<br/>
+                        优化企业财务管理四条线：<br/>
+                        经营线、内控线、预算线、税务<br/>
+                        线，帮助企业解决核心的问题！</p>
+                </div>
+                <div class="clear"></div>
+                <div class="cwjy">
+                    <h2></h2>
+                    <img src="http://site.whrhkj.com/public/img/ztglk/images/part4_img3.jpg">
+                    <h3>还原财务现场</h3>
+                    <p>海量财税实战案例生动还原财务<br/>
+                        现场，学的就是企业需要的，<br/>
+                        为企业创造价值，<br/>
+                        也为自己增值，<br/>
+                        晋升财务主管拿高薪！</p>
+                </div>
+
+            </div>
+            <div class="col-sm-6 animate-box">
+
+                <div class="cwjy">
+                    <h2></h2>
+                    <img src="http://site.whrhkj.com/public/img/ztglk/images/part4_img2.jpg">
+                    <h3>直击企业命脉</h3>
+                    <p>直击企业命脉，真正成为企业财<br/>
+                        务安全的防火墙，企业财务管理<br/>
+                        的提升利器，<br/>
+                        企业财富的创造者！</p>
+                </div>
+                <span class="opentalk">申请免费试听  >>></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="part5">
+    <div class="part5 animate-box">
+        <h2><span>在仁和，</span>你可以收获更多！</h2>
+        <img src="http://site.whrhkj.com/public/img/ztglk/images/part6.png">
+        <span class="opentalk zxbtn">申请免费试听  >>></span>
+    </div>
+</section>
+
+
+<section id="part6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 animate-box"><h2>仁和财务圈</h2></div>
+            <div class="col-sm-8 animate-box">
+                <p>
+                    志趣相投的人连接起来，会更有趣；<br/>
+                    思维各异的人碰撞起来，会更精进！</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="part7">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 animate-box">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part8wz.jpg" style="margin-bottom: 10px;">
+                <p>有积极热情的财务职场新秀，<br/>
+                    有实战经验丰富的财务高手与管理大咖，<br/>
+                    还有履历丰富的创业者、企业家。</p>
+                <p>在这里，你可以解决实战难题：<br/>
+                    整合近百万仁和校友资源，财务新秀与管理大咖汇聚，通过各类主题活动增进彼此交<br/>流互动，感受财务精英们的实战智慧。</p>
+                <p>在这里，你可以实现人脉扩展：<br/>
+                    每年百余场财务讲座、高端财会沙龙、主题峰会，感受成功人士的思维模式与成功哲<br/>
+                    学，实现人脉资源的深度积累。</p>
+                <p>在这里，你可以扩宽视角展现自我：<br/>
+                    在仁和各类讲座沙龙中担任主持、演讲、分享嘉宾，突破、展现自我，从而获取更多<br/>职位信息与推荐机会，实现财务精英梦想。</p>
+                <p>选择大于努力！</p>
+            </div>
+            <div class="col-sm-5 animate-box">
+                <img src="http://site.whrhkj.com/public/img/ztglk/images/part8.png">
+            </div>
+            <div class="clear"></div>
+            <div class="part7 animate-box">
+                <span class="opentalk">加入她们  成就精英梦想  >>></span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<div class="footer">
+    <div class="footer1">
+        <ul>
+
+            <li><a href="#" class="opentalk" target="_blank"><img
+                    src="http://site.whrhkj.com/public/img/land/ztcma/images/footer2.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img
+                    src="http://site.whrhkj.com/public/img/land/ztcma/images/footer3.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img
+                    src="http://site.whrhkj.com/public/img/land/ztcma/images/footer4.png"></a></li>
+
+            <li><a href="#" class="opentalk" target="_blank"><img
+                    src="http://site.whrhkj.com/public/img/land/ztcma/images/footer6.png"></a></li>
+
+            <li><a href="#top"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer8.png"></a></li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <p>版权所有 @ 2013-2018 仁和会计集团-武汉荣昌仁和会计咨询服务有限公司 鄂ICP备13010580号</p>
+</div>
+<script type="text/javascript" src="../js/ztglk/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="../js/ztglk/main.js"></script>
+<style>
+    .new_box .new_box_wrap .form .input .iname span {
+        position: relative;
+    }
+
+    .new_box .new_box_wrap .form .input .iname span:after {
+        position: absolute;
+        content: "*";
+        color: red;
+        font-size: 12px;
+        left: -10px;
+        font-weight: bold;
+    }
+
+    .new_box .new_box_wrap .form .area select {
+        width: 150px;
+        height: inherit;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+    }
+
+    .new_box .new_box_wrap .form .info select {
+        width: 110px;
+        height: inherit;
+        float: left;
+        display: block;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+    }
+
+    .new_box .new_box_wrap .form .edu select,
+    .new_box .new_box_wrap .form .edu input {
+        width: 110px;
+        float: left;
+        height: inherit;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+    }
+
+    .new_box .new_box_wrap .form .edu input {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .new_box .new_box_wrap .form .tel input {
+        width: 307px;
+        height: inherit;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .new_box .new_box_wrap .show_money span {
+        font-size: 54px;
+        color: #ff0000;
+        line-height: 52px;
+        font-family: Arial, "Microsoft YaHei";
+    }
+</style>
+
+<!--短信验证码校验-->
+<!--<script src="http://site.whrhkj.com/public/js/areadata_safe.js"></script>-->
+<!--<script src="http://site.whrhkj.com/public/js/areadata_test.js"></script>-->
+
+<!--<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20000239/10069297.js"></script>-->
+<script>
+    var lanren = {
+        navFast: function () {
+            var defaultTop = (window.screen.height - $('.fixright-all').height()) / 2 - 200; //默认顶部保持上下居中，再往上去100像素
+            $(window).scroll(function () {
+                var offsetTop = defaultTop + $(window).scrollTop() + 'px';
+                $('.fixright-all').animate({top: offsetTop},
+                    {
+                        duration: 800,	//滑动速度
+                        queue: false    //此动画将不进入动画队列
+                    });
+            });
+        }
+    };
+    lanren.navFast();
+</script>
+<style>
+    .right_sidebar #tabNav li > img {
+        width: 40px;
+        height: 40px;
+        margin: 20px 20px 10px 20px;
+        padding: 0;
+        border: none
+    }
+
+    .right_sidebar #tabNav li span {
+        width: 80px;
+        height: 14px;
+        line-height: 14px;
+        display: block
+    }
+
+    .icon04 form {
+        position: absolute;
+        top: 123px;
+        left: 30px
+    }
+</style>
+
+
+<script>
+    $(document).ready(function () {
+        $(".tabLi").mouseover(function () {
+            var i = $(this).index();
+
+            $(".tabCon").eq(i).show().siblings(".tabCon").hide();
+        })
+    })
+    $('.sidebar_sub').click(function () {
+        var form = $(this).parent();
+        var mobile = $.trim(form.find('.mobile').val())
+        if (!/^[1][3-9][0-9]{9}$/.test(mobile)) {
+            layer.alert('请输入11位手机号码')
+            return false
+        }
+        layerLoading()
+        $.ajax({
+            type: "POST",
+            url: basePath + "land/ajax_eroll",
+            dataType: 'json',
+            data: form.serialize(),
+            success: function (e) {
+                layer.closeAll()
+                if (e.status == true) {
+                    layer.alert('信息提交成功~');
+                }
+                else {
+                    layer.alert('信息提交失败，请重试')
+                }
+            }
+        })
+    })
+</script>
+
+<!--百度统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1e334801481a175f07227ffec6af8528";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--end百度统计-->
+</body>
+</html>
