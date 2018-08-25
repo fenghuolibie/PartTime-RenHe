@@ -8,14 +8,14 @@ a{
 
 .div0_top{
 	position:relative;
-	background-color:red;
+	background-color:#f9090a;
 	min-width:1300px;
 	margin:0 auto;
 	height: 90px;}
 	
 .div0_top2{
 	position:fixed;
-	background-color:red;
+	background-color:#f9090a;
 	width: 100%;
 	min-width: 1300px;
 	height: 90px;
