@@ -32,23 +32,23 @@
 <style>
     .wrap{position: relative;height: 100%;width: 1000px;margin: 0 auto;}
     .ask{position: absolute; font-size: 0;text-indent: -10000px;}
-    .cca1{height: 430px;background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca2.jpg) no-repeat center center;background-size: cover;}
-    .cca1 .wrap{height: 430px;background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca1.png) no-repeat left center;}
+    .cca1{height: 430px;background: url(../img/ztcca/cca2.jpg) no-repeat center center;background-size: cover;}
+    .cca1 .wrap{height: 430px;background: url(../img/ztcca/cca1.png) no-repeat left center;}
     .cca1 .wrap .ask{width: 287px;height: 65px;bottom: 96px;left: 2px;}
     .cca2{height: 884px;background-color: #ffffff;}
-    .cca2 .wrap{background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca3.png) no-repeat top 40px center;}
+    .cca2 .wrap{background: url(../img/ztcca/cca3.png) no-repeat top 40px center;}
     .cca2 .wrap .cca4{position: absolute;bottom: 50px;left: 50%;margin-left: -134px;width: 268px;height: 54px;}
     .cca3{height: 1130px;background-color: #edf3fe;}
-    .cca3 .wrap{background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca5.png) no-repeat top 60px center;}
+    .cca3 .wrap{background: url(../img/ztcca/cca5.png) no-repeat top 60px center;}
     .cca3 .wrap .ask{width: 180px;height: 40px;bottom: 562px;left: 198px;}
     .cca3 .wrap .ask + .ask{bottom: 110px;}
     .cca4{height: 724px; background-color: #ffffff;}
-    .cca4 .wrap{background:url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca6.png) no-repeat top 50px center;}
+    .cca4 .wrap{background:url(../img/ztcca/cca6.png) no-repeat top 50px center;}
     .cca4 .wrap .ask{width: 240px;height: 56px;bottom: 70px;left: 50%;margin-left: -130px;}
-    .cca5{height: 770px;background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca8.png) repeat-y;background-size: auto 100%;}
-    .cca5 .wrap{background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca7.png) no-repeat center center;}
+    .cca5{height: 770px;background: url(../img/ztcca/cca8.png) repeat-y;background-size: auto 100%;}
+    .cca5 .wrap{background: url(../img/ztcca/cca7.png) no-repeat center center;}
     .cca6{height: 570px;background-color: #ffffff;}
-    .cca6 .wrap{background: url(http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca9.png) no-repeat center center;}
+    .cca6 .wrap{background: url(../img/ztcca/cca9.png) no-repeat center center;}
 </style>
 <div class="container-fluid">
     <div class="row cca1">
@@ -58,7 +58,7 @@
     </div>
     <div class="row cca2">
         <div class="wrap">
-            <img src="http://jx.site.whrhkj.com/public/img/land/ztcca/images/cca4.png" alt="" class="opentalk cca4">
+            <img src="../img/ztcca/cca4.png" alt="" class="opentalk cca4">
         </div>
     </div>
     <div class="row cca3">
@@ -87,13 +87,13 @@
     <div class="footer1">
         <ul>
 
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer2.png"></a></li>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer3.png"></a></li>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer4.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcca/footer2.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcca/footer3.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcca/footer4.png"></a></li>
 
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer6.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcca/footer6.png"></a></li>
 
-            <li><a href="#top"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer8.png"></a></li>
+            <li><a href="#top"><img src="../img/ztcca/footer8.png"></a></li>
 
         </ul>
         <div class="clear"></div>
@@ -103,38 +103,7 @@
 </div>
 </div>
 
-<script type="text/javascript">
-    $(function(){
-        $(".course_box").hover(function(){
-            $(this).addClass("animated swing");
-            $(this).find(".desc").show().removeClass("fadeOut").addClass("animated fadeIn");
-        },function(){
-            $(this).removeClass("animated swing");
-            $(this).find(".desc").hide().remoceClass("fadeIn").addClass("animated fadeOut");
-        });
-        $(".part1_1").hover(function(){
-
-            $(this).find(".part1img").addClass("animated bounce");
-        },function(){
-            $(this).find(".part1img").removeClass("animated bounce");
-        });
-        $(".part5_1, .part5_2").hover(function(){
-
-            $(this).find(".part5img").addClass("flipInY animated");
-        },function(){
-            $(this).find(".part5img").removeClass("flipInY animated");
-        });
-    });
-</script>
 <style>
-    .new_box{display: none; position: fixed;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0,0,0,.3);z-index: 10000;}
-    .new_box .new_box_wrap{position: absolute;width: 920px;height: 412px; top: 200px;left:50%;margin-left: -406px;background: url(http://jx.site.whrhkj.com/public/img/bg.png) no-repeat center center;}
-    .new_box .new_box_close{position: absolute;width: 42px;height: 42px;right: 0px;top: 31px; border-radius: 50%;font-size: 0;cursor: pointer; }
-    .new_box .new_box_count{position: absolute;width: 100px;height: 100px;right: 335px;top: 153px; border-radius: 50%;font-size: 0;cursor: pointer; }
-    .new_box .new_box_wrap .form{position: absolute;bottom:43px;left: 40px;width: 430px;height: 170px;}
-    .new_box .new_box_wrap .form .input{height: 36px;}
-    .new_box .new_box_wrap .form .input+.input{margin-top: 10px;}
-    .new_box .new_box_wrap .form .input .iname{display: block;float: left;width: 100px;text-align: right;height: 36px;line-height: 36px;font-size: 18px;color: #000000;}
     .new_box .new_box_wrap .form .input .iname span{position:relative;}
     .new_box .new_box_wrap .form .input .iname span:after{position:absolute;content: "*";color:red;font-size: 12px;left: -10px;font-weight: bold;}
     .new_box .new_box_wrap .form .area select{width: 150px;height: inherit;outline: none;border-radius: 4px;border: 1px solid #cccccc;}
@@ -144,30 +113,14 @@
     .new_box .new_box_wrap .form .edu input{width: 110px;float: left;height: inherit;outline: none;border-radius: 4px;border: 1px solid #cccccc;}
     .new_box .new_box_wrap .form .edu input{padding-left: 10px;padding-right: 10px;}
 
-    .new_box .new_box_wrap .form .info .iname2{width: 86px;}
     .new_box .new_box_wrap .form .tel input{width: 307px;height: inherit;border-radius: 4px;border: 1px solid #cccccc;outline: none;padding-left: 10px;padding-right:10px; }
-    .new_box .new_box_wrap .show_money{position: absolute;width: 204px;height: 52px;right: 74px;bottom: 52px;font-size: 20px;text-align: right;}
     .new_box .new_box_wrap .show_money span{font-size: 54px;color: #ff0000;line-height: 52px; font-family:  Arial, "Microsoft YaHei";}
 </style>
 
 <style>
-    .right_sidebar{width:80px;height:540px;color:#fff;text-align:center;font-size:14px;background:#404040;position:fixed;right:0;top:50%;margin-top:-245px;z-index:10009;border-radius:10px 0 0 10px}
     .right_sidebar #tabNav li>img{width:40px;height:40px;margin:20px 20px 10px 20px;padding:0;border:none}
     .right_sidebar #tabNav li span{width:80px;height:14px;line-height:14px;display:block}
-    .icon01{width:309px;height:208px;display:block;position:absolute;right:-114px;top:0;display:none;cursor:pointer;}
-    .icon02{width:309px;height:208px;display:block;position:absolute;right:76px;top:107px;display:none;cursor:pointer;}
-    .icon03{width:309px;height:208px;display:block;position:absolute;right:76px;top:216px;display:none;cursor:pointer;}
-    .icon04{width:309px;height:208px;display:block;position:absolute;right:76px;top:324px;display:none;cursor:pointer;}
     .icon04 form{position:absolute;top:123px;left:30px}
-    .icon04 form #sidebar_tel{width:176px;height:36px;background:#fff}
-    .icon04 form .sidebar_sub{width:64px;height:35px;background:#ffcf40;color:#000;margin-left:-4px}
-    .icon05{width:309px;height:208px;display:block;position:absolute;right:76px;top:432px;display:none}
-    .tabLi{width:80px;height:108px;text-align:center;cursor:pointer;position: relative;z-index: 1000000; }
-    .consult{width:80px;height:108px;background:url(http://jx.site.whrhkj.com/public/img/syimg/consult.gif) no-repeat;border-radius:10px 0 0 0}
-    .try,.try:hover{background:#f47d1d}
-    .guide,.guide:hover{background:#5757d9}
-    .call,.call:hover{background:#2ea8e6}
-    .make,.make:hover{background:#a373e6}
 </style>
 
 </body>
