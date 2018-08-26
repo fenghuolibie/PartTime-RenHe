@@ -26,28 +26,8 @@
         <span class="phone">全国咨询热线：400-807-0827</span>
     </div>
 </div>
-<div class="homeApply row no-gutter" style="display: none">
-    <div class="homeApply-gb" style="cursor:pointer;"><img src="http://jx.site.whrhkj.com/public/img/tck-gb.png"> </div>
-    <div class="applyTitle">
-        <h5>申请<span>免费</span>体验课</h5>
-        <h6>同时获取50元电子优惠券</h6>
-    </div>
-    <form class="homeForm" id="regform">
-        <div id="element_id">
-            <select class="province prov" name="prov" id="prov" style="border: 1px solid #dcdedb;" ></select> <br>
-            <select class="city" id="city" name="city" style="border: 1px solid #dcdedb;"></select>
-            <label for="hname" id="labelHname" ><input type="text" id="hname" name="name" class="ys" placeholder="您的姓名" value=""></label>
-            <label for="hnum" id="labelHnum" class="ys"><input type="text" id="mobile" name="mobile"   class="ys" placeholder="您的手机号" value=""></label>
-            <label for="" class="col-100"><input type="num" id="dcode"  class="ys" placeholder="输入验证码"><input type="button" onclick="sendCode($('#mobile').val(),this)" id="send_sms" value="发送验证码" style="cursor:pointer;"></label>
-            <select class="area dist" id="dist" name="dist" style="margin-top: -10px;border: 1px solid #dcdedb;"></select>
-            <input type="hidden" value="39" name="type">
-        </div>
-        <input type="button" value="立即申请" class="hsub">
-    </form>
-</div>
 
-
-<link rel="stylesheet" href="http://jx.site.whrhkj.com/public/js/swiper/css/swiper.min.css">
+<link rel="stylesheet" href="../js/swiper/css/swiper.min.css">
 <style>
     *{margin:0;padding:0}
     ul li{list-style:none}
@@ -55,17 +35,17 @@
     em{font-style:normal}
     a:hover{color:#fff;text-decoration:none}
     .wrap{position:relative;width:1200px;margin:0 auto}
-    .cm_top{height:600px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/banner.jpg) no-repeat center center;background-size:cover}
+    .cm_top{height:600px;background:url(../img/ztcpa2018/banner.jpg) no-repeat center center;background-size:cover}
     .cm_top .wrap{height:100%;position:relative}
     .ask{position:absolute;display:inline-block;width:286px;height:54px;background-color:#ff485c;border-radius:27px;line-height:54px;left:50%;margin-left:-143px;font-size:24px;font-weight:400;font-stretch:normal;color:#fff;text-align:center;text-decoration:none}
     .ask0{bottom:116px}
     .advantage{height:600px}
     .advantage .wrap{height:100%}
     .advantages{padding-left:30px;margin:60px 0 -36px 41px;width:490px;height:200px;padding-left:30px;background-color:#fff;box-shadow:5px 8px 30px rgba(0,0,0,.12);border-radius:12px}
-    .advantage_1{width:100%;height:100%;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/1.png) no-repeat 323px 33px}
-    .advantage_2{width:100%;height:100%;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/2.png) no-repeat right}
-    .advantage_3{width:100%;height:100%;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/3.png) no-repeat 275px 31px}
-    .advantage_4{width:100%;height:100%;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/4.png) no-repeat right 10px}
+    .advantage_1{width:100%;height:100%;background:url(../img/ztcpa2018/1.png) no-repeat 323px 33px}
+    .advantage_2{width:100%;height:100%;background:url(../img/ztcpa2018/2.png) no-repeat right}
+    .advantage_3{width:100%;height:100%;background:url(../img/ztcpa2018/3.png) no-repeat 275px 31px}
+    .advantage_4{width:100%;height:100%;background:url(../img/ztcpa2018/4.png) no-repeat right 10px}
     .advantages b{display:inline-block;margin:8px 0 10px;font-size:24px;font-weight:400;font-stretch:normal;line-height:48px}
     .advantage_1 b{color:#2e6be6}
     .advantage_2 b{color:#fb3}
@@ -73,13 +53,13 @@
     .advantage_4 b{color:#d945d9}
     .advantages p{font-size:16px;font-weight:400;font-stretch:normal;line-height:24px;color:#666}
     .ask1{bottom:35px}
-    .justline{height:168px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/line.png) no-repeat center center;background-size:cover}
-    .question{height:804px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_1.png) no-repeat center center;background-size:cover}
+    .justline{height:168px;background:url(../img/ztcpa2018/line.png) no-repeat center center;background-size:cover}
+    .question{height:804px;background:url(../img/ztcpa2018/bg_1.png) no-repeat center center;background-size:cover}
     .question .wrap{text-align:center;height:100%;padding-top:10px}
     .question .wrap h1{margin-top:50px;font-size:60px;font-weight:400;font-stretch:normal;line-height:48px;letter-spacing:0;color:#ff485c}
     .question .wrap p{margin-top:13px;font-size:24px;font-weight:400;font-stretch:normal;line-height:48px;letter-spacing:0}
     .ask2{bottom:40px}
-    .answer{height:650px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_2.png) no-repeat center center;background-size:cover}
+    .answer{height:650px;background:url(../img/ztcpa2018/bg_2.png) no-repeat center center;background-size:cover}
     .answer .wrap{height:100%}
     .answer .wrap .ansleft{position:relative;margin-top:50px;width:415px;margin-left:127px;float:left}
     .answer .wrap .ansleft h3{margin-top:10px;margin-bottom:30px}
@@ -87,12 +67,12 @@
     .answer .wrap .ansleft .ask{position:absolute;display:inline-block;width:286px;height:54px;background-color:#ff485c;border-radius:27px;line-height:54px;left:50%;margin-left:-143px;font-size:24px;font-weight:400;font-stretch:normal;color:#fff;text-align:center;text-decoration:none;bottom:-100px}
     .answer .wrap .ansleft a em{float:right}
     .ansleft a em:hover{text-decoration:underline}
-    .answer .wrap .ansright{position:relative;padding-top:30px;width:480px;margin-right:120px;padding-left:30px;height:100%;float:right;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_3.png) no-repeat center center;background-size:cover}
+    .answer .wrap .ansright{position:relative;padding-top:30px;width:480px;margin-right:120px;padding-left:30px;height:100%;float:right;background:url(../img/ztcpa2018/bg_3.png) no-repeat center center;background-size:cover}
     .ansright h1{margin:20px;font-size:40px;color:#fff}
     .ansright p{color:#fff;font-size:16px;padding-left:10px;margin-bottom:90px}
     .ansright .ask{position:absolute;display:inline-block;width:84%;height:54px;background-color:#ff485c;border-radius:7px;line-height:54px;left:50%;margin-left:-41%;font-size:24px;font-weight:400;font-stretch:normal;color:#fff;text-align:center;text-decoration:none;bottom:40px}
     .form input{margin:5px 20px;width:88%;height:54px;line-height:54px;border-radius:6px;outline:0;border:none;padding-left:10px;padding-right:10px;font-size:20px;color:#666;margin-right:20px;margin-bottom:20px}
-    .tostudy{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_4.png) no-repeat center center;background-size:cover}
+    .tostudy{background:url(../img/ztcpa2018/bg_4.png) no-repeat center center;background-size:cover}
     .tostudy .wrap{height:100%;text-align:center}
     .tostudy .wrap h1{margin-top:79px;color:#fff;font-size:48px}
     .tostudy .wrap h1 em{color:#ffd633}
@@ -103,7 +83,7 @@
     .tostudy .wrap ul li:nth-of-type(4){background-image:linear-gradient(-50deg,#2f65db 0,#258ded 50%,#1cb0fc 100%),linear-gradient(#e85e46,#e85e46)}
     .tostudy .wrap ul li h3{margin-top:65px;font-size:24px;font-weight:400;font-stretch:normal;line-height:34px;letter-spacing:0}
     .tostudy .wrap ul li p:nth-of-type(1){width:89%;height:72px;font-size:14px;font-weight:400;font-stretch:normal;line-height:18px;letter-spacing:0}
-    .tostudy .wrap ul li .rectange{display:inline-block;text-align:center;font-family:"微软雅黑";margin:10px 0;width:108px;height:40px;font-size:18px;font-weight:400;font-stretch:normal;line-height:40px;letter-spacing:0;color:#e85e46;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/intro.png) no-repeat center;background-size:cover}
+    .tostudy .wrap ul li .rectange{display:inline-block;text-align:center;font-family:"微软雅黑";margin:10px 0;width:108px;height:40px;font-size:18px;font-weight:400;font-stretch:normal;line-height:40px;letter-spacing:0;color:#e85e46;background:url(../img/ztcpa2018/intro.png) no-repeat center;background-size:cover}
     .tostudy .wrap ul li .times{font-size:18px;height:120px;font-weight:400;font-stretch:normal;line-height:30px}
     .pos1{width:108px;position:absolute;top:-54px;left:50%;margin-left:-54px}
     .yourtime{height:36px;font-size:16px;font-weight:400;font-stretch:normal;line-height:18px;letter-spacing:0}
@@ -127,20 +107,20 @@
     .twofast .wrap ul li .suitfor{padding:10px 20px 20px;display:inline-block;width:480px;height:113px;background-color:#fff;font-size:16px;font-weight:400;font-stretch:normal;line-height:30px;letter-spacing:0;color:#010101;border-radius:4px;border:solid 1px #eee;margin-top:7px}
     p{margin:0}
     .twofast .wrap ul li .block0{display:inline-block;width:48%;font-weight:400;font-stretch:normal;line-height:30px;font-family:"微软雅黑";letter-spacing:0}
-    .getpaper{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_5.png) no-repeat center center;background-size:cover;height:850px}
+    .getpaper{background:url(../img/ztcpa2018/bg_5.png) no-repeat center center;background-size:cover;height:850px}
     .getpaper .wrap{padding-top:75px;height:100%;text-align:center}
     .getpaper .wrap ul{padding-left:100px;margin-bottom:18px}
-    .getpaper .wrap ul li{text-align:left;padding-left:44px;color:#fff;float:left;margin:10px;width:300px;height:180px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/a.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li{text-align:left;padding-left:44px;color:#fff;float:left;margin:10px;width:300px;height:180px;background:url(../img/ztcpa2018/a.png) no-repeat center center;background-size:cover}
     .t3{font-size:48px;font-weight:400;letter-spacing:0;color:#2e6be6}
     .getpaper .wrap h1{margin-top:10px;margin-bottom:33px;font-size:48px;font-weight:400;letter-spacing:0}
     .getpaper .wrap ul li h3{margin-bottom:-4px;margin-top:10px;font-size:24px;font-weight:400;font-stretch:normal;line-height:48px}
     .getpaper .wrap ul li p{font-size:16px;font-weight:400;font-stretch:normal;line-height:24px;width:88%}
     .getpaper .wrap .font0{font-size:18px;font-family:"微软雅黑";margin:20px 0 30px;line-height:30px}
-    .getpaper .wrap ul li:nth-of-type(2){background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/b.png) no-repeat center center;background-size:cover}
-    .getpaper .wrap ul li:nth-of-type(3){background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/c.png) no-repeat center center;background-size:cover}
-    .getpaper .wrap ul li:nth-of-type(4){background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/d.png) no-repeat center center;background-size:cover}
-    .getpaper .wrap ul li:nth-of-type(5){background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/e.png) no-repeat center center;background-size:cover}
-    .getpaper .wrap ul li:nth-of-type(6){background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/f.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li:nth-of-type(2){background:url(../img/ztcpa2018/b.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li:nth-of-type(3){background:url(../img/ztcpa2018/c.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li:nth-of-type(4){background:url(../img/ztcpa2018/d.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li:nth-of-type(5){background:url(../img/ztcpa2018/e.png) no-repeat center center;background-size:cover}
+    .getpaper .wrap ul li:nth-of-type(6){background:url(../img/ztcpa2018/f.png) no-repeat center center;background-size:cover}
     .personal{height:1324px}
     .personal .wrap{padding-top:30px;height:100%;text-align:center}
     .personal .wrap h1{font-size:48px;font-family:"微软雅黑";margin-bottom:30px}
@@ -161,12 +141,12 @@
     .personal h1.font36 em{color:#2e6be6}
     .personal h1.font36 b{color:#ff485c}
     .askmore{margin-top:50px}
-    .project{height:1147px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_6.png) no-repeat center center;background-size:cover}
+    .project{height:1147px;background:url(../img/ztcpa2018/bg_6.png) no-repeat center center;background-size:cover}
     .project .wrap{padding-top:80px;height:100%;text-align:center}
     .project .wrap h1{margin-bottom:30px;font-size:48px;font-weight:400;font-stretch:normal;line-height:48px;letter-spacing:0;color:#fff}
     .project .wrap h2{margin-top:40px;font-size:36px;font-weight:400;font-stretch:normal;line-height:48px;letter-spacing:0;color:#fff}
     .project .wrap p{font-size:24px;font-weight:400;font-stretch:normal;line-height:48px;margin-bottom:20px;letter-spacing:0;color:#fff}
-    .project1{height:702px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_7.png) no-repeat center center;background-size:cover}
+    .project1{height:702px;background:url(../img/ztcpa2018/bg_7.png) no-repeat center center;background-size:cover}
     .project1 .wrap{height:100%;margin:0 100px;position:relative}
     .download{position:absolute;right:-3%;bottom:23%;display:inline-block;width:240px;height:48px;background-color:#ff485c;border-radius:27px;line-height:48px;font-size:24px;font-weight:400;font-stretch:normal;color:#fff;text-align:center;text-decoration:none}
     .project2{height:905px}
@@ -180,16 +160,16 @@
     .right-swiper{position:absolute;right:223px;left:auto;top:52px;z-index:1}
     .nocurrent-swiper{width:253px;height:454px;border-radius:8px;box-shadow:0 0 20px rgba(0,0,0,.05)}
     .nocurrent-swiper:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(237,240,240,.6);z-index:99}
-    .slide0{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/lx.png) no-repeat right 50%/auto 100% #fff}
-    .slide1{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/ganbin.png) no-repeat right 50%/auto 100% #fff}
-    .slide2{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/zdd.png) no-repeat right 50%/auto 100% #e2e3e8}
-    .slide3{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/wx.png) no-repeat right 50%/auto 100% #f0faf9}
-    .slide4{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/cl.png) no-repeat right 50%/auto 100% #f0faf9}
-    .slide5{background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/wl.png) no-repeat right 50%/auto 100% #f0faf9}
-    .swiper-button-prev{width:48px;height:48px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/curr_prev.png) no-repeat center center}
-    .swiper-button-next{width:48px;height:48px;background-size:auto;background-image:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/curr_next.png)}
+    .slide0{background:url(../img/ztcpa2018/lx.png) no-repeat right 50%/auto 100% #fff}
+    .slide1{background:url(../img/ztcpa2018/ganbin.png) no-repeat right 50%/auto 100% #fff}
+    .slide2{background:url(../img/ztcpa2018/zdd.png) no-repeat right 50%/auto 100% #e2e3e8}
+    .slide3{background:url(../img/ztcpa2018/wx.png) no-repeat right 50%/auto 100% #f0faf9}
+    .slide4{background:url(../img/ztcpa2018/cl.png) no-repeat right 50%/auto 100% #f0faf9}
+    .slide5{background:url(../img/ztcpa2018/wl.png) no-repeat right 50%/auto 100% #f0faf9}
+    .swiper-button-prev{width:48px;height:48px;background:url(../img/ztcpa2018/curr_prev.png) no-repeat center center}
+    .swiper-button-next{width:48px;height:48px;background-size:auto;background-image:url(../img/ztcpa2018/curr_next.png)}
     .asknow{margin-top:60px}
-    .nearschool{height:694px;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/bg_8.png) no-repeat center center;background-size:cover}
+    .nearschool{height:694px;background:url(../img/ztcpa2018/bg_8.png) no-repeat center center;background-size:cover}
     .nearschool .wrap{padding-top:40px;color:#fff;height:100%;text-align:center}
     .nearschool .wrap h1{font-size:48px}
     .nearschool .wrap em{color:#ffd633}
@@ -212,10 +192,10 @@
     #navsite .anchorList li{margin:0;background:#2c58b9;border-top:1px solid #2c58b9}
     #navsite .anchorList li:hover{margin:0;background:#204ba1;border-top:1px solid #2c58b9}
     #navsite .anchorList li.on{margin:0;background:#204ba1;border-top:1px solid #2c58b9}
-    #navsite .anchorList li a{display:block;padding:11px 31px 11px;border-left:10px solid #2c58b9;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;background-color:#036;color:#fff;font-size:16px;text-decoration:none;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/off.png) no-repeat 7px center}
+    #navsite .anchorList li a{display:block;padding:11px 31px 11px;border-left:10px solid #2c58b9;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;background-color:#036;color:#fff;font-size:16px;text-decoration:none;background:url(../img/ztcpa2018/off.png) no-repeat 7px center}
     html>body #navsite .anchorList li a{width:auto;font-family:"微软雅黑"}
-    #navsite .anchorList li a.on{color:#ffd633;border-left:3px solid #ffd633;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/on.png) no-repeat 7px center}
-    #navsite .anchorList li a:hover{border-left:3px solid #ffd633;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;color:#ffd633;background:url(http://jx.site.whrhkj.com/public/img/ztcpa2018/on.png) no-repeat 7px center}
+    #navsite .anchorList li a.on{color:#ffd633;border-left:3px solid #ffd633;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;background:url(../img/ztcpa2018/on.png) no-repeat 7px center}
+    #navsite .anchorList li a:hover{border-left:3px solid #ffd633;border-right:1px solid #2c58b9;border-bottom:1px solid #2c58b9;color:#ffd633;background:url(../img/ztcpa2018/on.png) no-repeat 7px center}
     .onAc{z-index:0}
     h6{width:1px;height:1px}
     .footer{margin-top: 0;}
@@ -292,14 +272,14 @@
         <div class="wrap">
             <h1><b>CPA为什么这么火？？？</b></h1>
             <p>全国30万人缺口 / 1:30的岗位需求 / 顶级黄金证书</p>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/advantage.png" alt="">
+            <img src="../img/ztcpa2018/advantage.png" alt="">
             <a href="javascript:;" class="ask ask2 opentalk">了解更多</a>
         </div>
     </div>
     <div class="row answer">
         <div class="wrap">
             <div class="ansleft">
-                <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/qa.png" alt="">
+                <img src="../img/ztcpa2018/qa.png" alt="">
                 <h3>告诉你关于CPA的一切</h3>
                 <a href="">注册会计师报考有什么条件？·····················&nbsp;<em>立即解答</em></a><br/>
                 <a href="">30岁以上了还可以学习吗？························&nbsp;<em>立即解答</em></a><br/>
@@ -335,7 +315,7 @@
             <h1><b>注会应该<em>怎么学</em></b></h1>
             <ul>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/pr1.png" class="pos1">
+                    <img src="../img/ztcpa2018/pr1.png" class="pos1">
                     <h3>在校大学生</h3>
                     <p>学习时间充足，无压力，学习注会的最佳时期，利用休息时间提前参与学习，毕业前就能拿证，超越同学3-5年</p>
                     <b class="rectange">推荐</b>
@@ -349,7 +329,7 @@
                     <a href="javascript:;" class="ask3 opentalk">点击查看学习计划</a>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/pr2.png" class="pos1">
+                    <img src="../img/ztcpa2018/pr2.png" class="pos1">
                     <h3>0基础转行</h3>
                     <p>学习时间短，压力大，无学习方向，无财务基础，无行业经验</p>
                     <b class="rectange">推荐</b>
@@ -363,7 +343,7 @@
                     <a href="javascript:;" class="ask3 opentalk">点击查看学习计划</a>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/pr3.png" class="pos1">
+                    <img src="../img/ztcpa2018/pr3.png" class="pos1">
                     <h3>全职宝妈</h3>
                     <p>生活压力大，精力比较散，照顾家庭和孩子占用大量时间，学习时间不固定，碎片化时间</p>
                     <b class="rectange">推荐</b>
@@ -376,7 +356,7 @@
                     <a href="javascript:;" class="ask3 opentalk">点击查看学习计划</a>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/pr4.png" class="pos1">
+                    <img src="../img/ztcpa2018/pr4.png" class="pos1">
                     <h3>在职“女超人”</h3>
                     <p>工作忙，时间少，无集中时间学习，工作生活压力大</p>
                     <b class="rectange">推荐</b>
@@ -397,10 +377,10 @@
     <div class="row twofast">
         <div class="wrap">
             <h3 class="cpa">仁和会计CPA分级课程体系，各种基础全覆盖</h3>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/2year.png" />
+            <img src="../img/ztcpa2018/2year.png" />
             <ul>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/21.png" alt="">
+                    <img src="../img/ztcpa2018/21.png" alt="">
                     <div class="shadow">
                         <a  class="ask ask01 opentalk">
                             预约试听课
@@ -421,7 +401,7 @@
                           上课时间：周末、周一至周五  9:00-16:30  18:30-21:30</span>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/23.png" alt="">
+                    <img src="../img/ztcpa2018/23.png" alt="">
                     <div class="shadow">
                         <a  class="ask ask01 opentalk">
                             预约试听课
@@ -441,7 +421,7 @@
                                           授课形式：名师视频课 + 面授答疑 + OTO智能教学平台</span>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/22.png" alt="">
+                    <img src="../img/ztcpa2018/22.png" alt="">
                     <div class="shadow">
                         <a  class="ask ask01 opentalk">
                             预约试听课
@@ -466,7 +446,7 @@
                         上课时间：周末、周一至周五  9:00-16:30  18:30-21:30</span>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/24.png" alt="">
+                    <img src="../img/ztcpa2018/24.png" alt="">
                     <div class="shadow">
                         <a  class="ask ask01 opentalk">
                             预约试听课
@@ -500,7 +480,7 @@
     <div class="row getpaper">
         <div class="wrap">
             <h3>阶段式分层教学，专业规划师量身打造学习计划</h3>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/recure.png" style="margin:10px;"/>
+            <img src="../img/ztcpa2018/recure.png" style="margin:10px;"/>
             <ul>
                 <li>
                     <h3>导入阶段</h3>
@@ -553,7 +533,7 @@
             <h1><b><b class="t3">私人顾问</b>式服务，扫平一切困难</b></h1>
             <div class="row margin1">
                 <div class="col-xs-3 col-md-3">
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/t1.png" alt="">
+                    <img src="../img/ztcpa2018/t1.png" alt="">
                     <h2 class="font1">无从下手</h2>
                     <p>面对堆积如山的备考<br/>
                         资料“考试密训”资料，<br/>
@@ -561,7 +541,7 @@
                     </p>
                 </div>
                 <div class="col-xs-3 col-md-3">
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/t2.png" alt="">
+                    <img src="../img/ztcpa2018/t2.png" alt="">
                     <h2 class="font1">时间不够</h2>
                     <p>繁忙的工作、紧张的<br/>
                         学业、频繁的社交活动、<br/>
@@ -569,7 +549,7 @@
                     </p>
                 </div>
                 <div class="col-xs-3 col-md-3">
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/t3.png" alt="">
+                    <img src="../img/ztcpa2018/t3.png" alt="">
                     <h2 class="font1">海量的习题</h2>
                     <p>各种习题、各种密卷，<br/>
                         哪些该做？哪些可以不做？<br/>
@@ -577,7 +557,7 @@
                     </p>
                 </div>
                 <div class="col-xs-3 col-md-3">
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/t4.png" alt="">
+                    <img src="../img/ztcpa2018/t4.png" alt="">
                     <h2 class="font1">没有计划</h2>
                     <p>考试倒计时6个月了，我该干<br/>
                         什么？剩下的时间怎么用？<br/>
@@ -586,25 +566,25 @@
                 </div>
             </div>
             <h2>这些问题，是否都在击打着你的梦想</h2>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/assitant.png" style='margin:10px auto 20px;'/>
+            <img src="../img/ztcpa2018/assitant.png" style='margin:10px auto 20px;'/>
             <ul>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/01.png" alt="">
+                    <img src="../img/ztcpa2018/01.png" alt="">
                     <h2>智能学习平台</h2>
                     <p>知识点回顾：课堂讲解的补充，随时随地巩固加强学习，课前预习，课后专项练习。</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/02.png" alt="">
+                    <img src="../img/ztcpa2018/02.png" alt="">
                     <h2>解决个性问题</h2>
                     <p>心理辅导、学习习惯辅导、学习技巧交流、专业知识论坛；满足学员的任何个性化需求。抛开杂念，专心学习。</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/03.png" alt="">
+                    <img src="../img/ztcpa2018/03.png" alt="">
                     <h2>作业检测体系</h2>
                     <p>在线作业系统，课后练习讲师随时批改，不懂的知识当天解决，问题不过夜。</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/04.png" alt="">
+                    <img src="../img/ztcpa2018/04.png" alt="">
                     <h2>私人学习督导</h2>
                     <p>学习督导、学习伙伴全程督学，时间计划安排，监督学习效果。。</p>
                 </li>
@@ -612,22 +592,22 @@
             </ul>
             <ul>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/05.png" alt="">
+                    <img src="../img/ztcpa2018/05.png" alt="">
                     <h2>定期测评 专项诊断</h2>
                     <p>知识点专项题库定期测评，随时掌握遗漏，及时补充。学习不再盲目</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/06.png" alt="">
+                    <img src="../img/ztcpa2018/06.png" alt="">
                     <h2>学习小组</h2>
                     <p>按学习进度分成学习小组，互相比学赶帮，定期晒学习成果，竞赛比拼。</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/07.png" alt="">
+                    <img src="../img/ztcpa2018/07.png" alt="">
                     <h2>名师服务群</h2>
                     <p>建立学习微信群，专业辅导老师随时在线解答，全方位服务。</p>
                 </li>
                 <li>
-                    <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/08.png" alt="">
+                    <img src="../img/ztcpa2018/08.png" alt="">
                     <h2>快速补课体系</h2>
                     <p>漏课补学，重点知识点多渠道反复学习，融会贯通。</p>
                 </li>
@@ -641,7 +621,7 @@
     <div class="row project">
         <div class="wrap">
             <h1><b>CPA学习流程：个性化学习方案</b></h1>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/3d.png" alt="">
+            <img src="../img/ztcpa2018/3d.png" alt="">
             <h2>一站式解决学习考试难题</h2>
             <p>你，只需安心学习，剩下的交给仁和会计</p>
             <a  class="ask opentalk">
@@ -654,82 +634,6 @@
         <div class="wrap">
             <a  class=" download opentalk">
                 一键下载学习资料
-            </a>
-        </div>
-    </div>
-    <h6 class="onAc" id="a7" title="专家团队"></h6>
-    <div class="row project2">
-        <div class="wrap">
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/16.png" alt="">
-            <div class="banner">
-                <div class="swiper">
-                    <div class="current-swiper swiper-container swiper-container-horizontal">
-                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1280px, 0px, 0px);">
-                            <div class="swiper-slide slide1 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide0 swiper-slide-active" data-swiper-slide-index="0" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide5 swiper-slide-prev" data-swiper-slide-index="5" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide4 swiper-slide-prev" data-swiper-slide-index="4" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide3 swiper-slide-prev" data-swiper-slide-index="3" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide2 swiper-slide-next" data-swiper-slide-index="2" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide1 swiper-slide-next" data-swiper-slide-index="1" style="width: 640px;">
-                            </div>
-                            <div class="swiper-slide slide5 swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 640px;">
-                            </div>
-                        </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="nocurrent-swiper left-swiper swiper-container swiper-container-horizontal">
-                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1920px, 0px, 0px);">
-                            <div class="swiper-slide slide2 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 960px;">
-                            </div>
-                            <div class="swiper-slide slide1 swiper-slide-prev" data-swiper-slide-index="1" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide0 swiper-slide-active" data-swiper-slide-index="0" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide5 swiper-slide-next" data-swiper-slide-index="5" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide4 swiper-slide-next" data-swiper-slide-index="4" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide3 swiper-slide-next" data-swiper-slide-index="3" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide2 swiper-slide-next" data-swiper-slide-index="2" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide0 swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 479px;">
-                            </div>
-                        </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-                    <div class="nocurrent-swiper right-swiper swiper-container swiper-container-horizontal">
-                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1920px, 0px, 0px);">
-                            <div class="swiper-slide slide2 swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 960px;">
-                            </div>
-                            <div class="swiper-slide slide5 swiper-slide-next" data-swiper-slide-index="5" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide4 swiper-slide-next" data-swiper-slide-index="4" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide3 swiper-slide-prev" data-swiper-slide-index="3" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide2 swiper-slide-prev" data-swiper-slide-index="2" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide1 swiper-slide-active" data-swiper-slide-index="1" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide0 swiper-slide-next" data-swiper-slide-index="0" style="width: 479px;">
-                            </div>
-                            <div class="swiper-slide slide0 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 479px;">
-                            </div>
-                        </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                </div>
-            </div>
-            <a  class="ask asknow opentalk">
-                预约专家试听
             </a>
         </div>
     </div>
@@ -808,73 +712,24 @@
             <p>为标杆企业培养标杆人才
                 企业对财务人员的需求，就是仁和会计对教学的要求
             </p>
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/cooperation.png" alt="">
+            <img src="../img/ztcpa2018/cooperation.png" alt="">
         </div>
     </div>
     <div class="row nearschool2">
         <div class="wrap">
-            <img src="http://jx.site.whrhkj.com/public/img/ztcpa2018/map.png" alt="">
+            <img src="../img/ztcpa2018/map.png" alt="">
         </div>
     </div>
 </div>
-<script src="http://jx.site.whrhkj.com/public/js/swiper/js/swiper.min.js"></script>
-<script src="http://jx.site.whrhkj.com/public/js/tfboys.min.js"></script>
-<script src="http://jx.site.whrhkj.com/public/js/test.js"></script>
-<!--<script>-->
-    <!--$('.onAc').goAnchor();-->
-<!--</script>-->
 
-<script>
-    function layerLoading(){
-        var shadow = document.createElement('div')
-        shadow.setAttribute('style','position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.3);z-index:1000;')
-        document.body.appendChild(shadow);
-        return layer.msg('正在提交中,请稍候',{
-            time:3000000,
-            icon:16
-        },function(){
-            document.body.removeChild(shadow);
-        })
-    }
-
-    $('.btn_sub').click(function(){
-        var form = $(this).parent();
-        var name = $.trim(form.find('.name').val())
-        var mobile = $.trim(form.find('.mobile').val())
-        if(!/^[\u4e00-\u9fa5]{1,5}$/.test(name)){
-            layer.alert('请输入1-5个中文姓名')
-            return false
-        }
-        if(!/^[1][3-9][0-9]{9}$/.test(mobile)){
-            layer.alert('请输入11位手机号码')
-            return false
-        }
-        layerLoading()
-        $.ajax({
-            type:"POST",
-            url:basePath+"land/ajax_eroll",
-            dataType:'json',
-            data: form.serialize(),
-            success:function(e){
-                layer.closeAll()
-                if(e.status == true){
-                    layer.alert('信息提交成功~');
-                }
-                else{
-                    layer.alert('信息提交失败，请重试')
-                }
-            }
-        })
-    })
-</script>
 <div class="footer">
     <div class="footer1">
         <ul>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer2.png"></a></li>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer3.png"></a></li>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer4.png"></a></li>
-            <li><a href="#" class="opentalk" target="_blank"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer6.png"></a></li>
-            <li><a href="#top"><img src="http://site.whrhkj.com/public/img/land/ztcma/images/footer8.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcpa2018/footer2.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcpa2018/footer3.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcpa2018/footer4.png"></a></li>
+            <li><a href="#" class="opentalk" target="_blank"><img src="../img/ztcpa2018/footer6.png"></a></li>
+            <li><a href="#top"><img src="../img/ztcpa2018/footer8.png"></a></li>
         </ul>
         <div class="clear"></div>
     </div>
@@ -883,7 +738,7 @@
 
 </div><style>
     .new_box{display: none; position: fixed;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0,0,0,.3);z-index: 10000;}
-    .new_box .new_box_wrap{position: absolute;width: 920px;height: 412px; top: 200px;left:50%;margin-left: -406px;background: url(http://jx.site.whrhkj.com/public/img/bg.png) no-repeat center center;}
+    .new_box .new_box_wrap{position: absolute;width: 920px;height: 412px; top: 200px;left:50%;margin-left: -406px;background: url(../img/bg.png) no-repeat center center;}
     .new_box .new_box_close{position: absolute;width: 42px;height: 42px;right: 0px;top: 31px; border-radius: 50%;font-size: 0;cursor: pointer; }
     .new_box .new_box_count{position: absolute;width: 100px;height: 100px;right: 335px;top: 153px; border-radius: 50%;font-size: 0;cursor: pointer; }
     .new_box .new_box_wrap .form{position: absolute;bottom:43px;left: 40px;width: 430px;height: 170px;}
@@ -905,145 +760,11 @@
     .new_box .new_box_wrap .show_money span{font-size: 54px;color: #ff0000;line-height: 52px; font-family:  Arial, "Microsoft YaHei";}
 </style>
 
-<!--<script src="http://jx.site.whrhkj.com/public/js/areadata_safe.js"></script>-->
-<!--<script src="http://jx.site.whrhkj.com/public/js/areadata_test.js"></script>-->
-
-<!--<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20000239/10069297.js"></script>-->
-<script>
-    var lanren = {
-        navFast:function(){
-            var defaultTop = (window.screen.height - $('.fixright-all').height())/2 -200; //默认顶部保持上下居中，再往上去100像素
-            $(window).scroll(function(){
-                var offsetTop = defaultTop + $(window).scrollTop()+'px';
-                $('.fixright-all').animate({top:offsetTop},
-                    {	duration: 800,	//滑动速度
-                        queue: false    //此动画将不进入动画队列
-                    });
-            });
-        }
-    };
-    lanren.navFast();
-</script>
 <style>
-    .right_sidebar{width:80px;height:540px;color:#fff;text-align:center;font-size:14px;background:#404040;position:fixed;right:0;top:50%;margin-top:-245px;z-index:10009;border-radius:10px 0 0 10px}
     .right_sidebar #tabNav li>img{width:40px;height:40px;margin:20px 20px 10px 20px;padding:0;border:none}
     .right_sidebar #tabNav li span{width:80px;height:14px;line-height:14px;display:block}
-    .icon01{width:309px;height:208px;display:block;position:absolute;right:-114px;top:0;display:none;cursor:pointer;}
-    .icon02{width:309px;height:208px;display:block;position:absolute;right:76px;top:107px;display:none;cursor:pointer;}
-    .icon03{width:309px;height:208px;display:block;position:absolute;right:76px;top:216px;display:none;cursor:pointer;}
-    .icon04{width:309px;height:208px;display:block;position:absolute;right:76px;top:324px;display:none;cursor:pointer;}
     .icon04 form{position:absolute;top:123px;left:30px}
-    .icon04 form #sidebar_tel{width:176px;height:36px;background:#fff}
-    .icon04 form .sidebar_sub{width:64px;height:35px;background:#ffcf40;color:#000;margin-left:-4px}
-    .icon05{width:309px;height:208px;display:block;position:absolute;right:76px;top:432px;display:none}
-    .tabLi{width:80px;height:108px;text-align:center;cursor:pointer;position: relative;z-index: 1000000; }
-    .consult{width:80px;height:108px;background:url(http://jx.site.whrhkj.com/public/img/syimg/consult.gif) no-repeat;border-radius:10px 0 0 0}
-    .try,.try:hover{background:#f47d1d}
-    .guide,.guide:hover{background:#5757d9}
-    .call,.call:hover{background:#2ea8e6}
-    .make,.make:hover{background:#a373e6}
 </style>
-<!--<div class="right_sidebar">
-        <div class="tab_box">
-            <ul id="tabNav">
-                <li class="tabLi consult opentalk">
-                </li>
-                 <li class="tabLi try ">
-                    <img src="http://jx.site.whrhkj.com/public/img/syimg/icon02.png" alt="">
-                    <span>试听</span>
-                </li>
-                <li class="tabLi guide">
-                    <img src="http://jx.site.whrhkj.com/public/img/syimg/icon03.png" alt="">
-                    <span>指导</span>
-                </li>
-                <li class="tabLi call">
-                    <img src="http://jx.site.whrhkj.com/public/img/syimg/icon04.png" alt="">
-                    <span>通话</span>
-                </li>
-                <li class="tabLi make">
-                    <img src="http://jx.site.whrhkj.com/public/img/syimg/icon05.png" alt="">
-                    <span>预约</span>
-                </li>
-            </ul>
-            <div class="clear"></div>
-            <div class="tabCon icon01 opentalk">
-                <img src="http://jx.site.whrhkj.com/public/img/syimg/consult.gif" alt="">
-            </div>
-            <div class="tabCon icon02 opentalk">
-                <img src="http://jx.site.whrhkj.com/public/img/syimg/st_bg.jpg" alt="">
-            </div>
-            <div class="tabCon icon03 opentalk">
-                <img src="http://jx.site.whrhkj.com/public/img/syimg/fd_bg.jpg" alt="">
-            </div>
-            <div class="tabCon icon04">
-                <img src="http://jx.site.whrhkj.com/public/img/syimg/th_bg.jpg" alt="">
-                <form action="">
-                    <input type="text" class="mobile" id="sidebar_tel" placeholder="请输入您的手机号" name="mobile">
-                    <input type="hidden" name="name" value="右侧电话">
-                    <input type="button" class="sidebar_sub" value="提交">
-                </form>
-            </div>
-            <div class="tabCon icon05 opentalk">
-                <img src="http://jx.site.whrhkj.com/public/img/syimg/ry_bg.jpg" alt="">
-            </div>
-        </div>
-</div>-->
-
-<script>
-    $(document).ready(function(){
-        $(".tabLi").mouseover(function(){
-            var i=$(this).index();
-
-            $(".tabCon").eq(i).show().siblings(".tabCon").hide();
-        })
-    })
-    $('.sidebar_sub').click(function(){
-        var form = $(this).parent();
-        var mobile = $.trim(form.find('.mobile').val())
-        if(!/^[1][3-9][0-9]{9}$/.test(mobile)){
-            layer.alert('请输入11位手机号码')
-            return false
-        }
-        layerLoading()
-        $.ajax({
-            type:"POST",
-            url:basePath+"land/ajax_eroll",
-            dataType:'json',
-            data: form.serialize(),
-            success:function(e){
-                layer.closeAll()
-                if(e.status == true){
-                    layer.alert('信息提交成功~');
-                }
-                else{
-                    layer.alert('信息提交失败，请重试')
-                }
-            }
-        })
-    })
-</script>
-
-<!--<script>-->
-    <!--$('.boxvideo').click(function(){-->
-        <!--$('.boxvideo').hide();-->
-        <!--$('.objvideo').show();-->
-    <!--});-->
-    <!--$('.opentalk').click(function(){-->
-        <!--doyoo.util.openChat('');return false;-->
-    <!--});-->
-    <!--$(".opentalk").click();-->
-<!--</script>-->
-<!--百度统计-->
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?1e334801481a175f07227ffec6af8528";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-<!--end百度统计-->
 
 </body>
 </html>
