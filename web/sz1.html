@@ -13,7 +13,6 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=150cc70baba5261af1187db4073d9f13"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 
-
     <script src="../js/jquery.js"></script>
     <script src="../js/layer/layer.js"></script>
     <link href="../css/ztglk/bootstrap.min.css" rel="stylesheet">
@@ -23,8 +22,6 @@
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
 </head>
 <body>
-
-
 ﻿
 <div class="mini-top">
     <div class="mini-header">
@@ -434,111 +431,23 @@
 
 <script type="text/javascript" src="../js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="../js/main.js"></script><style>
-    .new_box{display: none; position: fixed;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0,0,0,.3);z-index: 10000;}
-    .new_box .new_box_wrap{position: absolute;width: 920px;height: 412px; top: 200px;left:50%;margin-left: -406px;background: url(http://site.whrhkj.com/public/img/bg.png) no-repeat center center;}
-    .new_box .new_box_close{position: absolute;width: 42px;height: 42px;right: 0px;top: 31px; border-radius: 50%;font-size: 0;cursor: pointer; }
-    .new_box .new_box_count{position: absolute;width: 100px;height: 100px;right: 335px;top: 153px; border-radius: 50%;font-size: 0;cursor: pointer; }
-    .new_box .new_box_wrap .form{position: absolute;bottom:43px;left: 40px;width: 430px;height: 170px;}
-    .new_box .new_box_wrap .form .input{height: 36px;}
-    .new_box .new_box_wrap .form .input+.input{margin-top: 10px;}
-    .new_box .new_box_wrap .form .input .iname{display: block;float: left;width: 100px;text-align: right;height: 36px;line-height: 36px;font-size: 18px;color: #000000;}
     .new_box .new_box_wrap .form .input .iname span{position:relative;}
     .new_box .new_box_wrap .form .input .iname span:after{position:absolute;content: "*";color:red;font-size: 12px;left: -10px;font-weight: bold;}
     .new_box .new_box_wrap .form .area select{width: 150px;height: inherit;outline: none;border-radius: 4px;border: 1px solid #cccccc;}
     .new_box .new_box_wrap .form .info select{width: 110px;height: inherit;float: left;display:block;outline: none;border-radius: 4px;border: 1px solid #cccccc;}
-    .new_box .new_box_wrap .form .info .iname2,.new_box .new_box_wrap .form .edu .iname2{width: 86px;}
     .new_box .new_box_wrap .form .edu select,
     .new_box .new_box_wrap .form .edu input{width: 110px;float: left;height: inherit;outline: none;border-radius: 4px;border: 1px solid #cccccc;}
     .new_box .new_box_wrap .form .edu input{padding-left: 10px;padding-right: 10px;}
 
-    .new_box .new_box_wrap .form .info .iname2{width: 86px;}
     .new_box .new_box_wrap .form .tel input{width: 307px;height: inherit;border-radius: 4px;border: 1px solid #cccccc;outline: none;padding-left: 10px;padding-right:10px; }
-    .new_box .new_box_wrap .show_money{position: absolute;width: 204px;height: 52px;right: 74px;bottom: 52px;font-size: 20px;text-align: right;}
     .new_box .new_box_wrap .show_money span{font-size: 54px;color: #ff0000;line-height: 52px; font-family:  Arial, "Microsoft YaHei";}
 </style>
 
-<!--<script src="http://site.whrhkj.com/public/js/areadata_safe.js"></script>-->
-<!--<script src="http://site.whrhkj.com/public/js/areadata_test.js"></script>-->
-<!--<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20000239/10069297.js"></script>-->
-<script>
-    var lanren = {
-        navFast:function(){
-            var defaultTop = (window.screen.height - $('.fixright-all').height())/2 -200; //默认顶部保持上下居中，再往上去100像素
-            $(window).scroll(function(){
-                var offsetTop = defaultTop + $(window).scrollTop()+'px';
-                $('.fixright-all').animate({top:offsetTop},
-                    {	duration: 800,	//滑动速度
-                        queue: false    //此动画将不进入动画队列
-                    });
-            });
-        }
-    };
-    lanren.navFast();
-</script>
 <style>
-    .right_sidebar{width:80px;height:540px;color:#fff;text-align:center;font-size:14px;background:#404040;position:fixed;right:0;top:50%;margin-top:-245px;z-index:10009;border-radius:10px 0 0 10px}
     .right_sidebar #tabNav li>img{width:40px;height:40px;margin:20px 20px 10px 20px;padding:0;border:none}
     .right_sidebar #tabNav li span{width:80px;height:14px;line-height:14px;display:block}
-    .icon01{width:309px;height:208px;display:block;position:absolute;right:-114px;top:0;display:none;cursor:pointer;}
-    .icon02{width:309px;height:208px;display:block;position:absolute;right:76px;top:107px;display:none;cursor:pointer;}
-    .icon03{width:309px;height:208px;display:block;position:absolute;right:76px;top:216px;display:none;cursor:pointer;}
-    .icon04{width:309px;height:208px;display:block;position:absolute;right:76px;top:324px;display:none;cursor:pointer;}
     .icon04 form{position:absolute;top:123px;left:30px}
-    .icon04 form #sidebar_tel{width:176px;height:36px;background:#fff}
-    .icon04 form .sidebar_sub{width:64px;height:35px;background:#ffcf40;color:#000;margin-left:-4px}
-    .icon05{width:309px;height:208px;display:block;position:absolute;right:76px;top:432px;display:none}
-    .tabLi{width:80px;height:108px;text-align:center;cursor:pointer;position: relative;z-index: 1000000; }
-    .consult{width:80px;height:108px;background:url(http://site.whrhkj.com/public/img/syimg/consult.gif) no-repeat;border-radius:10px 0 0 0}
-    .try,.try:hover{background:#f47d1d}
-    .guide,.guide:hover{background:#5757d9}
-    .call,.call:hover{background:#2ea8e6}
-    .make,.make:hover{background:#a373e6}
 </style>
-<!--<div class="right_sidebar">
-        <div class="tab_box">
-            <ul id="tabNav">
-                <li class="tabLi consult opentalk">
-                </li>
-                 <li class="tabLi try ">
-                    <img src="http://site.whrhkj.com/public/img/syimg/icon02.png" alt="">
-                    <span>试听</span>
-                </li>
-                <li class="tabLi guide">
-                    <img src="http://site.whrhkj.com/public/img/syimg/icon03.png" alt="">
-                    <span>指导</span>
-                </li>
-                <li class="tabLi call">
-                    <img src="http://site.whrhkj.com/public/img/syimg/icon04.png" alt="">
-                    <span>通话</span>
-                </li>
-                <li class="tabLi make">
-                    <img src="http://site.whrhkj.com/public/img/syimg/icon05.png" alt="">
-                    <span>预约</span>
-                </li>
-            </ul>
-            <div class="clear"></div>
-            <div class="tabCon icon01 opentalk">
-                <img src="http://site.whrhkj.com/public/img/syimg/consult.gif" alt="">
-            </div>
-            <div class="tabCon icon02 opentalk">
-                <img src="http://site.whrhkj.com/public/img/syimg/st_bg.jpg" alt="">
-            </div>
-            <div class="tabCon icon03 opentalk">
-                <img src="http://site.whrhkj.com/public/img/syimg/fd_bg.jpg" alt="">
-            </div>
-            <div class="tabCon icon04">
-                <img src="http://site.whrhkj.com/public/img/syimg/th_bg.jpg" alt="">
-                <form action="">
-                    <input type="text" class="mobile" id="sidebar_tel" placeholder="请输入您的手机号" name="mobile">
-                    <input type="hidden" name="name" value="右侧电话">
-                    <input type="button" class="sidebar_sub" value="提交">
-                </form>
-            </div>
-            <div class="tabCon icon05 opentalk">
-                <img src="http://site.whrhkj.com/public/img/syimg/ry_bg.jpg" alt="">
-            </div>
-        </div>
-</div>-->
 
 <script>
     $(document).ready(function(){
@@ -573,28 +482,6 @@
         })
     })
 </script>
-
-<!--<script>-->
-    <!--$('.boxvideo').click(function(){-->
-        <!--$('.boxvideo').hide();-->
-        <!--$('.objvideo').show();-->
-    <!--});-->
-    <!--$('.opentalk').click(function(){-->
-        <!--doyoo.util.openChat('');return false;-->
-    <!--});-->
-    <!--$(".opentalk").click();-->
-<!--</script>-->
-<!--百度统计-->
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?1e334801481a175f07227ffec6af8528";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-<!--end百度统计-->
 
 </body>
 </html>
