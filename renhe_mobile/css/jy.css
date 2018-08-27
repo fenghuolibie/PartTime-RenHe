@@ -1,0 +1,33 @@
+
+.topimg{margin: 10px;}
+.topimg img{width: 100%;border-radius: 4px;}
+.jycase{}
+.jycase .item{padding: 0 10px;}
+.jycase .item .left{width: 54%;float: left;height: 140px;margin-bottom: 10px; padding: 0 15px;position: relative;z-index:2;background-color: #ffffff;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 4px;border-bottom-left-radius: 4px;}
+.jycase .item .left h5{font-size: 1.1rem;line-height: 1.1rem;color: #999999;margin: 10px 0;font-weight: 500;}
+.jycase .item .left p{font-size: .8rem;color: #333333;font-weight: 500;margin: 0;}
+.jycase .item .left p:nth-child(2){height: 3rem;line-height: 1rem; overflow: hidden;text-overflow: ellipsis;}
+.jycase .item .left h6{font-size: 0.8rem;color: #999999;font-weight: 500;margin: 0;position: absolute;bottom: 10px;left: 15px;}
+.jycase .item .right{width: 46%;float: left;position: relative;z-index:2;height: 140px;margin-bottom: 10px;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 4px;border-bottom-right-radius: 4px;overflow: hidden;}
+.jycase .item .right img{height: 100%;width: auto;border: 0;float: left;}
+.jycase .item .right .money{width: 100px;height: 100px;border-radius: 50%;background-color: #0053ac;position: absolute;bottom: -55px;right: -30px;}
+.jycase .item .right .money h5 , .jycase .item .right .money span{width: 100px;text-align: center;padding-right:40px;padding-left: 25px; margin: 0;margin-top: 10px; color: #ffffff;font-size: 0.7rem;line-height: 0.7rem;font-weight: 500;}
+.jycase .item .right .money span{display:block;margin-top: 0;}
+.jycase .item .detail{display: none;font-size: .7rem;color: #666666;background-color: #e7e5e6;padding:15px;margin-bottom: 15px;margin-top:-10px;z-index:1;position: relative;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),3px 3px 10px rgba(0, 0, 0, 0.3);}
+.jycase .item .detail img{max-width: 100%;margin: 0 auto;}
+
+.jycase .jz{height: 40px;line-height: 40px;width: 100%;background-color: #ffffff;color: #999999;font-weight: 500;font-size: 0.8rem;text-align: center;}
+.jycase .jz span{background: url(../img/list-news/down-load.png) no-repeat left;background-size: 20px 20px;padding-left: 30px;}
+
+.homeApply{display: none;}
